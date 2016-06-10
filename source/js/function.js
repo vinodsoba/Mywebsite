@@ -1,5 +1,3 @@
-window.onload = init;
-
 var gName;
 var g2d;
 var width = 1900;
@@ -7,52 +5,33 @@ var height = 800;
 var title = "Welcome to my Website Vinod Soba";
 var title2 = "1.Resume";
 var title3 = "2.Portfolio";
+var count =0;
+var x;
+var y;
+var framesPerSecond = 2;
+var currentPos =0;
+var MyImage = new Image();
+
+/*
+var dy = 400;
+var dx = 780;
+var dw = 235;
+var dh = 200;
+var sx = 10;
+var sy = 0;
+var sw = 215;
+var sh = 190;
+
+*/
 //animate the sprite
-var vinny = new Image;
-vinny.src = "../source/images/vinny-slides.png";
-
-function sprite(options){
-
-	var that = {};
-
-	that.context = options.context;
-	that.width = options.width;
-	that.height = options.height;
-	that.image = options.image;
-
-
-
-		that.render = function () {
-
-        // Draw the animation
-        that.context.drawImage(
-           that.image,
-           0,
-           0,
-           that.width,
-           that.height,
-           0,
-           0,
-           that.width,
-           that.height);
-    };
-
-	return that;
-}
-
-var containerVinny = sprite({
-	width: 240,
-	height: 200,
-	image: vinny
-
-});
-
-
-
-g2d.drawImage(vinny, 200,200);
-draw();
 
 var gameState = 0;
+
+window.onload = function(){
+	init();	
+	scroll();
+}
+
 
 function init(){
 	gName = document.getElementById("canvas");
@@ -77,6 +56,9 @@ function draw(){
 		gradient.addColorStop("1.0","#8C8E90");
 		g2d.fillStyle = gradient;
 		g2d.fillText(title, (width / 2) - (g2d.measureText(title).width / 2), 150);		
+		
+
+		
 		
 
 		g2d.font = "30px Segoe ui";
@@ -104,6 +86,98 @@ function draw(){
 
 }
 
+function drawPath(){
+		
+		MyImage.src = "http://localhost/mywebsite/source/images/vinny-slides.png";
+		
+		setTimeout(function(){ 
+
+		
+		g2d.clearRect(790, 300, 215,190);
+
+		x = (count % 2) * 215;
+		y = Math.floor(count / 7) * 190;
+		g2d.drawImage(MyImage, x, y, 215, 190, 790, 300, 215, 190);
+
+		if(count == 7){
+			count = 0;
+		}else{
+			count++;
+		}
+		console.log(y);
+	}, 5000 / framesPerSecond);
+
+		
+
+}
+
+requestAnimationFrame(drawPath);
+
+
+
+
+
+function moveleft(){
+	currentPos += 5;
+
+	var delta =0;
+	var wheelDelta=0;
+
+
+
+	//calculating the next position of the object
+	currPos=parseInt(currentPos)-(delta*10);
+
+	//moving the position of the object
+   	MyImage.style.top = currPos+"px";
+	
+	
+	
+		
+	requestAnimationFrame(moveleft);
+	
+}
+
+
+function onScrollEventHandler(ev)
+    {
+    	moveleft();
+        drawPath();
+        //http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#event-type-scroll
+    } 
+
+
+
+    var el=window;
+
+    if(el.addEventListener)
+        el.addEventListener('scroll', onScrollEventHandler, false);   
+    else if (el.attachEvent)
+        el.attachEvent('onscroll', onScrollEventHandler); 
+
+function scroll(){
+	var lastScroll = 0;
+      $(window).scroll(function(event){
+          //Sets the current scroll position
+          var st = $(this).scrollTop();
+          //Determines up-or-down scrolling
+          if (st > lastScroll){
+             //Replace this with your function call for downward-scrolling
+             
+             
+          }
+          else {
+             //Replace this with your function call for upward-scrolling
+            var newImage = new Image();
+             newImage.src = "http://localhost/mywebsite/source/images/vinny-slides.png";
+             var left=0;
+
+             $(newImage).css({ 'display' : 'none'});
+          }
+          //Updates scroll position
+          lastScroll = st;
+      });
+}
 /*
 
 
