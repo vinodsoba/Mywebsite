@@ -1,0 +1,41 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/mixins";
+
+body {
+	background: #0A7BC4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1{
+  
+  font-family: 'arial', helvetica;
+  font-size: 18px;
+  color: #000;
+}
+
+#car1 {
+	
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	margin: 0px 20px 0px 20px;
+	display: inline-block;
+	border: solid 1px #ddd
+}
+
+
+#car2 {
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	margin: 0px 20px 0px 20px;
+	display: inline-block;
+	border: solid 1px #ddd
+}
