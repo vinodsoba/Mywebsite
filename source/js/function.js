@@ -161,21 +161,26 @@ function scroll(){
           if (st > lastScroll){
              //Replace this with your function call for downward-scrolling
              console.log("up");
+             var y=document.getElementById('vinny-container').offsetLeft;
+            y = y - 100;
+            document.getElementById('vinny-container').style.left= y + "px";
+           
              
           }
           else {
              //Replace this with your function call for upward-scrolling
              console.log("down");
-            var step=1
-  			var vinny = document.getElementById("vinny-container").offsetLeft;
-  			var x=10;
-            document.getElementById("vinny-container").style.left= x + "px";
-            for(x=0; x>step; x++){
-              x++;
-            	console.log(x);
-              
-            }
-         
+            
+  			var x=document.getElementById('vinny-container').offsetLeft;
+            x= x +100;
+            document.getElementById('vinny-container').style.left= x + "px";
+          
+            console.log(vinny);
+          	
+          	
+
+            
+
           }
           //Updates scroll position
           lastScroll = st;
