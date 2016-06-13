@@ -61,6 +61,12 @@ h1{
 
 }
 
+
+
+ .size-48 { font-size: 48px; }
+ .size-72 { font-size: 72px; color: #fff; }
+
+
 #car2 {
 	width: 300px;
 	height: 300px;
@@ -68,6 +74,14 @@ h1{
 	margin: 0px 20px 0px 20px;
 	display: inline-block;
 	border: solid 1px #ddd
+}
+
+#ground {
+	width: auto;
+	height: 90px;
+	background: #8b6239;
+	position: relative;
+    bottom: 0px;
 }
 
 #vinny-container {
