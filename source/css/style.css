@@ -138,7 +138,19 @@ h1 {
   color: #fff;
 }
 
+/* line 68, ../sass/style.scss */
+.size-102 {
+  font-size: 102px;
+  color: #fff;
+}
+
 /* line 70, ../sass/style.scss */
+.cloud2 {
+  position: relative;
+  left: 700px;
+}
+
+/* line 74, ../sass/style.scss */
 #car2 {
   width: 300px;
   height: 300px;
@@ -148,7 +160,7 @@ h1 {
   border: solid 1px #ddd;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 #ground {
   width: auto;
   height: 90px;
@@ -157,7 +169,7 @@ h1 {
   bottom: 0px;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 #vinny-container {
   width: 14%;
   height: 198px;
@@ -167,7 +179,7 @@ h1 {
   top: 0;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .vinny1 {
   width: 231px;
   height: 396px;
@@ -192,7 +204,7 @@ h1 {
     background-position: -500px;
   }
 }
-/* line 117, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 #layer-horizontal-1 {
   width: 1000px;
   height: 246px;
