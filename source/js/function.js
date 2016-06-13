@@ -172,15 +172,10 @@ function scroll(){
              console.log("down");
             
   			var x=document.getElementById('vinny-container').offsetLeft;
-            x= x +100;
+            x= x + 100;
             document.getElementById('vinny-container').style.left= x + "px";
           
             console.log(vinny);
-          	
-          	
-
-            
-
           }
           //Updates scroll position
           lastScroll = st;
