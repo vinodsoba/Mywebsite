@@ -1,7 +1,7 @@
 /* line 1, ../sass/partials/_mixins.scss */
 .text {
   font-size: 32px;
-  color: #343434;
+  color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   margin: 30px 60px;
@@ -95,7 +95,39 @@ h1 {
   border: solid 1px #ddd;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
+#introduction {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* line 38, ../sass/style.scss */
+.text-forward-a {
+  position: relative;
+  font-family: 'Cabin', sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  float: right;
+}
+
+/* line 47, ../sass/style.scss */
+.text-forward-b {
+  position: relative;
+  width: 440px;
+  font-family: 'Cabin', sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+/* line 57, ../sass/style.scss */
+.text-container {
+  width: 710px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 64, ../sass/style.scss */
 #car2 {
   width: 300px;
   height: 300px;
@@ -105,22 +137,23 @@ h1 {
   border: solid 1px #ddd;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 #vinny-container {
-  width: 1900px;
+  width: 14%;
   height: 198px;
+  margin: 0 auto;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   top: 0;
 }
 
-/* line 52, ../sass/style.scss */
-#vinny {
+/* line 83, ../sass/style.scss */
+.vinny1 {
   width: 231px;
   height: 396px;
   background: url(../images/vinny-slides.png);
-  animation: play 0.8s steps(2) infinite;
-  -webkit-animation: play 0.8s steps(2) infinite;
+  animation: stop 0.8s steps(2) infinite;
+  -webkit-animation: stop 0.8s steps(2) infinite;
 }
 
 @keyframes play {
@@ -138,4 +171,9 @@ h1 {
   to {
     background-position: -500px;
   }
+}
+/* line 103, ../sass/style.scss */
+#layer-horizontal-1 {
+  width: 1000px;
+  height: 246px;
 }

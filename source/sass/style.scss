@@ -30,6 +30,36 @@ h1{
 	border: solid 1px #ddd
 }
 
+#introduction {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.text-forward-a {
+	position: relative;
+	font-family: 'Cabin', sans-serif;
+	color: #ffffff;
+	font-size: 24px;
+	float: right;
+
+}
+
+.text-forward-b {
+	position: relative;
+	width: 440px;
+	font-family: 'Cabin', sans-serif;
+	color: #ffffff;
+	font-size: 24px;
+	margin-bottom: 12px;
+
+}
+
+.text-container {
+	width: 710px;
+	margin: 0 auto;
+	position: relative;
+
+}
 
 #car2 {
 	width: 300px;
@@ -41,24 +71,25 @@ h1{
 }
 
 #vinny-container {
-	width: 1900px;
+	width: 14%;
 	height: 198px;
+	margin: 0 auto;
 	overflow: hidden;
-	position: absolute;
+	position: relative;
 	top: 0;
 }
 
 
-#vinny {
+.vinny1 {
   width: 231px;
   height: 396px;
   background: url(../images/vinny-slides.png);
-  animation: play .8s steps(2) infinite;
-  -webkit-animation: play .8s steps(2) infinite;
+  animation: stop .8s steps(2) infinite;
+  -webkit-animation: stop .8s steps(2) infinite;
 }
 
 @keyframes play {
-  from {  background-position: 0px;   }
+  from 	{  background-position: 0px;   }
   to 	{  background-position: -500px; }
 }
 
@@ -66,4 +97,11 @@ h1{
 @-webkit-keyframes play {
   from { background-position: 0px; }
   to {background-position: -500px; }
+}
+
+
+#layer-horizontal-1 {
+	width: 1000px;
+	height: 246px;
+	
 }
