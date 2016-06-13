@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+
+
+var title = "Vinod Soba";
+
+var canvas = document.getElementById("canvas");
+var g2d = canvas.getContext("2d");
+
+
+g2d.fillStyle = "black";
+g2d.fillRect(100,100,200,200);
+g2d.fillText(title, canvas.width / 2, canvas.width, 120);
+g2d.font = "30px Comic Sans MS";
+
+
+var vinny = document.getElementById("vinny-container");
+clearInterval(vinny);
+
+=======
+window.onload = init;
+>>>>>>> parent of 8b110b1... Animation added to Vinny
+
 var gName;
 var g2d;
 var width = 1900;
@@ -5,33 +27,52 @@ var height = 800;
 var title = "Welcome to my Website Vinod Soba";
 var title2 = "1.Resume";
 var title3 = "2.Portfolio";
-var count =0;
-var x;
-var y;
-var framesPerSecond = 2;
-var currentPos =0;
-var MyImage = new Image();
-
-/*
-var dy = 400;
-var dx = 780;
-var dw = 235;
-var dh = 200;
-var sx = 10;
-var sy = 0;
-var sw = 215;
-var sh = 190;
-
-*/
 //animate the sprite
+var vinny = new Image;
+vinny.src = "../source/images/vinny-slides.png";
 
-var gameState = 0;
+function sprite(options){
 
-window.onload = function(){
-	init();	
-	scroll();
+	var that = {};
+
+	that.context = options.context;
+	that.width = options.width;
+	that.height = options.height;
+	that.image = options.image;
+
+
+
+		that.render = function () {
+
+        // Draw the animation
+        that.context.drawImage(
+           that.image,
+           0,
+           0,
+           that.width,
+           that.height,
+           0,
+           0,
+           that.width,
+           that.height);
+    };
+
+	return that;
 }
 
+var containerVinny = sprite({
+	width: 240,
+	height: 200,
+	image: vinny
+
+});
+
+
+
+g2d.drawImage(vinny, 200,200);
+draw();
+
+var gameState = 0;
 
 function init(){
 	gName = document.getElementById("canvas");
@@ -56,9 +97,6 @@ function draw(){
 		gradient.addColorStop("1.0","#8C8E90");
 		g2d.fillStyle = gradient;
 		g2d.fillText(title, (width / 2) - (g2d.measureText(title).width / 2), 150);		
-		
-
-		
 		
 
 		g2d.font = "30px Segoe ui";
@@ -86,9 +124,10 @@ function draw(){
 
 }
 
+<<<<<<< HEAD
 function drawPath(){
 		
-		MyImage.src = "http://localhost/mywebsite/source/images/vinny-slides.png";
+		MyImage.src = "images/vinny-slides.png";
 		
 		setTimeout(function(){ 
 
@@ -117,31 +156,9 @@ requestAnimationFrame(drawPath);
 
 
 
-function moveleft(){
-	currentPos += 5;
-
-	var delta =0;
-	var wheelDelta=0;
-
-
-
-	//calculating the next position of the object
-	currPos=parseInt(currentPos)-(delta*10);
-
-	//moving the position of the object
-   	MyImage.style.top = currPos+"px";
-	
-	
-	
-		
-	requestAnimationFrame(moveleft);
-	
-}
-
-
 function onScrollEventHandler(ev)
     {
-    	moveleft();
+    	
         drawPath();
         //http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#event-type-scroll
     } 
@@ -157,27 +174,41 @@ function onScrollEventHandler(ev)
 
 function scroll(){
 	var lastScroll = 0;
+	
       $(window).scroll(function(event){
           //Sets the current scroll position
           var st = $(this).scrollTop();
           //Determines up-or-down scrolling
           if (st > lastScroll){
              //Replace this with your function call for downward-scrolling
-             
+             console.log("up");
+             var y=document.getElementById('vinny-container').offsetLeft;
+            y = y - 100;
+            document.getElementById('vinny-container').style.left= y + "px";
+           
              
           }
           else {
              //Replace this with your function call for upward-scrolling
-            var newImage = new Image();
-             newImage.src = "http://localhost/mywebsite/source/images/vinny-slides.png";
-             var left=0;
+             console.log("down");
+            
+  			var x=document.getElementById('vinny-container').offsetLeft;
+            x= x +100;
+            document.getElementById('vinny-container').style.left= x + "px";
+          
+            console.log(vinny);
+          	
+          	
 
-             $(newImage).css({ 'display' : 'none'});
+            
+
           }
           //Updates scroll position
           lastScroll = st;
       });
 }
+=======
+>>>>>>> parent of 8b110b1... Animation added to Vinny
 /*
 
 
@@ -290,3 +321,4 @@ function doSomething() {
 }
 }
 */
+
