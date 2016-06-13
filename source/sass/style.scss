@@ -39,3 +39,31 @@ h1{
 	display: inline-block;
 	border: solid 1px #ddd
 }
+
+#vinny-container {
+	width: 1900px;
+	height: 198px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+
+#vinny {
+  width: 231px;
+  height: 396px;
+  background: url(../images/vinny-slides.png);
+  animation: play .8s steps(2) infinite;
+  -webkit-animation: play .8s steps(2) infinite;
+}
+
+@keyframes play {
+  from {  background-position: 0px;   }
+  to 	{  background-position: -500px; }
+}
+
+
+@-webkit-keyframes play {
+  from { background-position: 0px; }
+  to {background-position: -500px; }
+}
