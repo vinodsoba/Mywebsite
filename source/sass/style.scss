@@ -35,9 +35,19 @@ h1{
 	margin: 0 auto;
 }
 
+.text {
+  font-size: 32px;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 100;
+  text-align: center;
+  margin: 30px 60px;
+  max-width: 817px;
+}
+
 .text-forward-a {
 	position: relative;
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Fredoka One', cursive;
 	color: #ffffff;
 	font-size: 24px;
 	float: right;
@@ -46,23 +56,22 @@ h1{
 
 .text-forward-b {
 	position: relative;
-	width: 440px;
-	font-family: 'Cabin', sans-serif;
+	width: 140px;
+	font-family: 'Fredoka One', cursive;
 	color: #ffffff;
 	font-size: 24px;
 	margin-bottom: 12px;
+	float: left;
 
 }
 
 .text-container {
-	width: 710px;
+	width: 50%;
 	margin: 0 auto;
-	position: relative;
-
 }
 
 
-
+.fi-arrow-right { float: right }
  .size-48 { font-size: 48px; }
  .size-72 { font-size: 72px; color: #fff; }
  .size-102 { font-size: 102px; color: #fff; }
@@ -80,10 +89,16 @@ h1{
 	border: solid 1px #ddd
 }
 
-#ground {
+.grass {
 	width: auto;
 	height: 90px;
-	background: #8b6239;
+	background: url(../images/zig-zag.png);
+}
+
+#ground {
+	width: auto;
+	height: 20px;
+	background: #262222;
 	position: relative;
     bottom: 0px;
 }
@@ -97,6 +112,111 @@ h1{
 	top: 0;
 }
 
+#big-ben1 {
+	width: 470px;
+	height: 711px;
+	background: url(../images/big-ben.png);
+	position: relative;
+	top: 17%;
+}
+
+.big-ben {
+	
+}
+#cloud1 {
+	position: relative;
+	left: 500px
+}
+
+#cloud2 {
+	position: relative;
+	left: 900px;
+	top:30px
+}
+
+#cloud3 {
+	position: relative;
+	left: 30px;
+	top:69px
+}
+
+
+
+
+.cloud {
+	width: 124px;
+  	height: 83px;
+  	background: url(../images/clouds/cloud3.png);
+  	animation: moving-clouds 7s steps(2) infinite;
+  	-webkit-animation: moving-clouds 7s steps(2) infinite;
+	
+}
+
+.cloud2 {
+	width: 77px;
+  	height: 47px;
+  	background: url(../images/clouds/cloud2.png);
+  	animation: moving-clouds 7s steps(2) infinite;
+  	-webkit-animation: moving-clouds 7s steps(2) infinite;
+	
+}
+
+.cloud3 {
+	width: 77px;
+  	height: 47px;
+  	background: url(../images/clouds/cloud.png);
+  	animation: moving-clouds 7s steps(2) infinite;
+  	-webkit-animation: moving-clouds 7s steps(2) infinite;
+	
+}
+
+
+
+#mushroom-man {
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+    bottom: -199px;
+    left: 202px
+}
+
+.mushroom {
+  width: 65px;
+  height: 74px;
+  background: url(../images/sprite-mushroomman.png);
+  animation: play-mushroom 7s steps(3) infinite;
+  -webkit-animation: play-mushroom 7s steps(3) infinite;
+}
+
+
+@keyframes play-mushroom {
+  from 	{  background-position: 0px;   }
+  to 	{  background-position: -500px; }
+}
+
+
+@-webkit-keyframes play-mushroom {
+  from { background-position: 0px; }
+  to {background-position: -500px; }
+}
+
+
+
+#layer-horizontal-2 {
+	width: 1902px;
+	height: 600px; 
+	position: absolute;
+	bottom: 0px;
+}
+
+#layer-horizontal-3 {
+	width: 1902px;
+	height: 600px; 
+	position: absolute;
+	top: 0;
+}
+
+
 
 .vinny1 {
   width: 231px;
@@ -107,7 +227,7 @@ h1{
 }
 
 @keyframes play {
-  from 	{  background-position: 0px;   }
+  from 	{  background-position: 0px;  }
   to 	{  background-position: -500px; }
 }
 

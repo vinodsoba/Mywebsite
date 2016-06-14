@@ -33,8 +33,8 @@ function onScrollEventHandler(ev)
     if (w >= 1925){
    		scroll();   	
     }
-    else{ alert("Need to set value");	 }
-   console.log(innerHTML = "Width: " + w + "<br>Height: " + h);
+    else{  console.log(innerHTML = "Width: " + w + "<br>Height: " + h); }
+   
     //http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#event-type-scroll
 } 
 
@@ -64,7 +64,7 @@ function scroll(){
           }
           else {
              //Replace this with your function call for upward-scrolling
-             console.log("down");
+            console.log("down");
             
   			var x=document.getElementById('vinny-container').offsetLeft;
             x= x + 100;
