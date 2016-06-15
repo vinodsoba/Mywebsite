@@ -116,31 +116,31 @@ h1 {
   font-family: 'Fredoka One', cursive;
   font-weight: 100;
   text-align: center;
-  margin: 30px 60px;
-  max-width: 817px;
 }
 
-/* line 56, ../sass/style.scss */
-.text-forward-a {
+/* line 55, ../sass/style.scss */
+#text-forward-a {
   position: relative;
-  font-family: 'Fredoka One', cursive;
-  color: #ffffff;
-  font-size: 24px;
   float: right;
   top: 18px;
   right: 56px;
 }
 
-/* line 67, ../sass/style.scss */
-.text-forward-b {
+/* line 63, ../sass/style.scss */
+#text-forward-b {
   position: relative;
   width: 140px;
-  font-family: 'Fredoka One', cursive;
-  color: #ffffff;
-  font-size: 24px;
   margin-bottom: 12px;
   float: left;
   left: 49px;
+  top: 20px;
+}
+
+/* line 72, ../sass/style.scss */
+#text-forward-c {
+  position: relative;
+  width: 140px;
+  left: 249px;
   top: 20px;
 }
 
@@ -213,7 +213,7 @@ h1 {
 
 /* line 127, ../sass/style.scss */
 .grass {
-  width: 100%;
+  width: 6000px;
   height: 90px;
   background: url(../images/zig-zag.png);
 }
@@ -233,7 +233,7 @@ h1 {
   height: 198px;
   overflow: hidden;
   position: absolute;
-  bottom: 11%;
+  bottom: 107px;
 }
 
 /* line 149, ../sass/style.scss */
@@ -246,32 +246,32 @@ h1 {
   width: 500px;
   height: 700px;
   background: url(../images/tree.png);
-  position: relative;
-  top: 3%;
-  z-index: 999;
+  position: absolute;
+  bottom: 96px;
+  z-index: -999;
 }
 
-/* line 166, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 #cloud1 {
   position: relative;
   left: 500px;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 #cloud2 {
   position: relative;
   left: 900px;
   top: 30px;
 }
 
-/* line 177, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 #cloud3 {
   position: relative;
   left: 30px;
   top: 69px;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .cloud {
   width: 124px;
   height: 83px;
@@ -280,7 +280,7 @@ h1 {
   -webkit-animation: moving-clouds 7s steps(2) infinite;
 }
 
-/* line 193, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .cloud2 {
   width: 77px;
   height: 47px;
@@ -289,7 +289,7 @@ h1 {
   -webkit-animation: moving-clouds 7s steps(2) infinite;
 }
 
-/* line 202, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .cloud3 {
   width: 77px;
   height: 47px;
@@ -298,15 +298,15 @@ h1 {
   -webkit-animation: moving-clouds 7s steps(2) infinite;
 }
 
-/* line 212, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 #mushroom-man {
   overflow: hidden;
-  position: relative;
-  bottom: -199px;
-  left: 872px;
+  position: absolute;
+  bottom: 107px;
+  left: 1014px;
 }
 
-/* line 220, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .mushroom {
   width: 65px;
   height: 74px;
@@ -353,13 +353,13 @@ h1 {
     transform: scale(1);
   }
 }
-/* line 253, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 #layer-horizontal-1 {
   width: 1000px;
   height: 100%;
 }
 
-/* line 259, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 #layer-horizontal-2 {
   width: 1000px;
   position: absolute;
@@ -368,7 +368,7 @@ h1 {
   height: 100%;
 }
 
-/* line 269, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 #layer-horizontal-3 {
   width: 1500px;
   height: 600px;
@@ -378,19 +378,20 @@ h1 {
   display: none;
 }
 
-/* line 278, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 #layer-horizontal-4 {
   width: 500px;
   display: inline-block;
   float: left;
 }
 
-/* line 287, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .horizontal {
   width: 5200px;
+  height: 900px;
 }
 
-/* line 293, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .vinny1 {
   width: 231px;
   height: 396px;
