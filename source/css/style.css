@@ -70,22 +70,30 @@ _text-mobile-p {
 /* line 6, ../sass/style.scss */
 body {
   background: #0A7BC4;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 h1 {
   font-family: 'arial', helvetica;
   font-size: 18px;
   color: #000;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 31, ../sass/style.scss */
 #car1 {
   width: 300px;
   height: 300px;
@@ -95,13 +103,13 @@ h1 {
   border: solid 1px #ddd;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 #introduction {
   width: 800px;
   margin: 0 auto;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .text {
   font-size: 32px;
   color: white;
@@ -112,16 +120,18 @@ h1 {
   max-width: 817px;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .text-forward-a {
   position: relative;
   font-family: 'Fredoka One', cursive;
   color: #ffffff;
   font-size: 24px;
   float: right;
+  top: 18px;
+  right: 56px;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .text-forward-b {
   position: relative;
   width: 140px;
@@ -130,43 +140,60 @@ h1 {
   font-size: 24px;
   margin-bottom: 12px;
   float: left;
+  left: 49px;
+  top: 20px;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .text-container {
   width: 50%;
   margin: 0 auto;
 }
 
-/* line 74, ../sass/style.scss */
-.fi-arrow-right {
-  float: right;
+/* line 85, ../sass/style.scss */
+.fi-arrow-left {
+  float: left;
+  animation: pulse 4s infinite;
+  -webkit-animation: pulse 4s infinite;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
+.fi-arrow-right {
+  float: right;
+  animation: pulse 4s infinite;
+  -webkit-animation: pulse 4s infinite;
+}
+
+/* line 99, ../sass/style.scss */
 .size-48 {
   font-size: 48px;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
+.size-73 {
+  font-size: 72px;
+  color: rgba(49, 38, 39, 0.68);
+}
+
+/* line 101, ../sass/style.scss */
 .size-72 {
   font-size: 72px;
-  color: #fff;
+  color: rgba(221, 19, 36, 0.68);
 }
 
-/* line 77, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .size-102 {
   font-size: 102px;
-  color: #fff;
+  color: rgba(221, 19, 36, 0.68);
 }
 
-/* line 79, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .cloud2 {
   position: relative;
   left: 700px;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 #car2 {
   width: 300px;
   height: 300px;
@@ -176,62 +203,75 @@ h1 {
   border: solid 1px #ddd;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
+#ground-container {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  width: 3000px;
+}
+
+/* line 127, ../sass/style.scss */
 .grass {
-  width: auto;
+  width: 100%;
   height: 90px;
   background: url(../images/zig-zag.png);
 }
 
-/* line 98, ../sass/style.scss */
-#ground {
-  width: auto;
+/* line 133, ../sass/style.scss */
+.ground {
+  width: 100%;
   height: 20px;
   background: #262222;
   position: relative;
-  bottom: 0px;
+  bottom: 2%;
 }
 
-/* line 106, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 #vinny-container {
   width: 14%;
   height: 198px;
-  margin: 0 auto;
   overflow: hidden;
-  position: relative;
-  top: 0;
+  position: absolute;
+  bottom: 11%;
 }
 
-/* line 115, ../sass/style.scss */
-#big-ben1 {
-  width: 470px;
-  height: 711px;
-  background: url(../images/big-ben.png);
-  position: relative;
-  top: 17%;
+/* line 149, ../sass/style.scss */
+.vinnycontainer {
+  left: 800px;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
+#tree1 {
+  width: 500px;
+  height: 700px;
+  background: url(../images/tree.png);
+  position: relative;
+  top: 3%;
+  z-index: 999;
+}
+
+/* line 166, ../sass/style.scss */
 #cloud1 {
   position: relative;
   left: 500px;
 }
 
-/* line 131, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 #cloud2 {
   position: relative;
   left: 900px;
   top: 30px;
 }
 
-/* line 137, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 #cloud3 {
   position: relative;
   left: 30px;
   top: 69px;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .cloud {
   width: 124px;
   height: 83px;
@@ -240,7 +280,7 @@ h1 {
   -webkit-animation: moving-clouds 7s steps(2) infinite;
 }
 
-/* line 155, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .cloud2 {
   width: 77px;
   height: 47px;
@@ -249,7 +289,7 @@ h1 {
   -webkit-animation: moving-clouds 7s steps(2) infinite;
 }
 
-/* line 164, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .cloud3 {
   width: 77px;
   height: 47px;
@@ -258,16 +298,15 @@ h1 {
   -webkit-animation: moving-clouds 7s steps(2) infinite;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 #mushroom-man {
-  margin: 0 auto;
   overflow: hidden;
   position: relative;
   bottom: -199px;
-  left: 202px;
+  left: 872px;
 }
 
-/* line 183, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .mushroom {
   width: 65px;
   height: 74px;
@@ -292,23 +331,66 @@ h1 {
     background-position: -500px;
   }
 }
-/* line 205, ../sass/style.scss */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* line 253, ../sass/style.scss */
+#layer-horizontal-1 {
+  width: 1000px;
+  height: 100%;
+}
+
+/* line 259, ../sass/style.scss */
 #layer-horizontal-2 {
-  width: 1902px;
-  height: 600px;
+  width: 1000px;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
+  left: 2200px;
+  height: 100%;
 }
 
-/* line 212, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 #layer-horizontal-3 {
-  width: 1902px;
+  width: 1500px;
   height: 600px;
-  position: absolute;
-  top: 0;
+  display: inline-block;
+  background: blue;
+  float: right;
+  display: none;
 }
 
-/* line 221, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
+#layer-horizontal-4 {
+  width: 500px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 287, ../sass/style.scss */
+.horizontal {
+  width: 5200px;
+}
+
+/* line 293, ../sass/style.scss */
 .vinny1 {
   width: 231px;
   height: 396px;
@@ -332,9 +414,4 @@ h1 {
   to {
     background-position: -500px;
   }
-}
-/* line 241, ../sass/style.scss */
-#layer-horizontal-1 {
-  width: 1000px;
-  height: 246px;
 }

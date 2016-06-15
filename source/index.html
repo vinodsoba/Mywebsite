@@ -17,46 +17,74 @@
 <link href="fonts/foundation-icons/foundation-icons.css" rel="stylesheet">
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="js/function.js" type="text/javascript"></script>
+<script src="js/detect-browser.js" type="text/javascript"></script>
 <script src="js/raf.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.js"></script>
+	<script>
+	$(function(){
+		$("#wrapper").wrapInner("<div>");
+		$(".horizontal").wrap("</div>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
+
+	</script>
 
 <body>
 <div id="wrapper">
 
 	<div id="introduction" class="text">Hello and Welcome to my Website</div>
 
+<div class="horizontal">
+
+	<div id="layer-horizontal-1" class="horizontal1">
+
+							<div id="text-container-1" class="text-container">
+								<i class="fi-arrow-left size-73"></i>
+								<i class="fi-arrow-right size-72"></i>
+								<div class="text-forward-a">Learn about me</div>
+								<div class="text-forward-b">My work</div>
+							</div>
+
+	</div>
 
 
-	<div id="layer-horizontal-1" class="horizontal">
+
 	<div id="cloud1" class="cloud"></div>
 	<div id="cloud2" class="cloud2"></div>
 
-	</div>
-	<div id="text-container-1" class="text-container">
-	<i class="fi-arrow-left size-72"></i>
-		<i class="fi-arrow-right size-72"></i>
-		<div class="text-forward-a">resume</div>
-
-		<div class="text-forward-b">portfolio</div>
-	</div>
-			<div id="layer-horizontal-2" class="horizontal">
+	
+	
+	<div id="layer-horizontal-2" class="horizontal">
 				<div id="cloud3" class="cloud"></div>
+
 				
 	</div>		
 
-	<div id="mushroom-man" class="mushroom"></div>			
+							<div id="mushroom-man" class="mushroom"></div>			
 				
-	<div id="vinny-container">
-		<div id="vinny" class="vinny1"></div>
+								<div id="vinny-container" class="vinnycontainer">
+									<div id="vinny" class="vinny1"></div>
+								</div>
+
+	<div id="ground-container">
+			<div  class="ground"></div>
+			<div  class="grass"></div>
 	</div>
 
-	<div id="ground" class="ground1"></div>
-	<div id="grass1" class="grass"></div>
-	
-
 		<div id="layer-horizontal-3" class="horizontal">
-			<div id="big-ben1" class="big-ben"></div>
+		this is some text
+			<div id="tree1" class="tree"></div>
 		</div>
-<!--<h1>Welcome to my car website below are list of current cars</h1>
+	
+</div>
+
+
+
+
+	<!--<h1>Welcome to my car website below are list of current cars</h1>
 <div id="car1">
 <h1>Golf VR6 Highline</h1>
 <button id="second">get image</button>
