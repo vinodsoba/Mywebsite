@@ -39,18 +39,51 @@ h1{
 }
 
 #introduction {
-	width: 800px;
-	margin: 0 auto;
+	position: absolute;
+	left: 600px
 }
 
 .text {
   font-size: 32px;
   color: white;
   font-family: 'Fredoka One', cursive;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
 
 }
+
+
+.text2 {
+  font-size: 22px;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  display: inline-block
+
+}
+
+#heading-container-1 {
+	position: relative;
+	left:200px
+}
+
+#heading-container-2 {
+	position: relative;
+	left:400px
+}
+
+#heading-container-3 {
+	position: relative;
+	left:600px
+}
+
+
+#heading-container-4 {
+	position: relative;
+	left:800px
+}
+
+
 
 #text-forward-a {
 	position: relative;
@@ -78,8 +111,9 @@ h1{
 
 
 .text-container {
-	width: 50%;
-	margin: 0 auto;
+	position: absolute;
+	left: 600px;
+	top:200px
 }
 
 .fi-arrow-left {
