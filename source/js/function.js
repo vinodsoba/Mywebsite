@@ -1,8 +1,12 @@
 var vinny = document.getElementById("vinny-container");
 var intro = document.getElementById("introduction");
+var flyingAirplane = document.getElementById("aeroplane-slides-1");
+var aeroplaneArray = new Array();
+aeroplaneArray.push(flyingAirplane);
 var isVinnyStatic = true;
-
-
+var barChart = document.getElementById("bar-chart-1"); 
+var barChart2 = document.getElementById("bar-chart-2"); 
+var barArray = new Array();
 var count =0;
 var x;
 var y;
@@ -10,21 +14,78 @@ var framesPerSecond = 2;
 var currentPos =0;
 var w = window.innerWidth;
 var h = window.innerHeight;
-
-
+var axisPositionTopObject = new Array();
+axisPositionTopObject.push(barChart, barChart2);
 
 //animate the sprite
 
 window.onload = function(){
 	
 	getWindow();
+	storeDivs();
+	move_box();
 }
 
 function getWindow() {  
-
-   
     
 }
+
+
+function move_box() {
+      var flyingAirplane = document.getElementById("aeroplane-slides-1");
+      set_translate(flyingAirplane, 100);
+ }
+
+	   
+    
+function set_translate(e, pix) {
+      e.style["-webkit-transform"] = "translate(0px, "+ pix +"px)";
+      e.style["-moz-transform"] = "translate(0px, -" + pix +"px)";
+      e.style["-ms-transform"] = "translate(0px, -" + pix + "px)";
+      e.style["-o-transform"] = "translate(0px, " + pix  + "px)";
+      e.style["transform"] = "translate(0px, -" + pix + "px)";
+}
+    
+
+
+function storeDivs()
+{
+	var divArray = document.getElementsByTagName("div");
+	
+    for (var i=0; i<divArray.length; i++)
+	{
+        if (divArray[i].getAttribute("class") == "axis")
+		{
+			barArray.push(divArray[i]);
+        }
+
+        if (divArray[i].getAttribute("class") == "bar")
+        {
+        
+        	divArray[i].style.animate({top: [axisPositionTopObject[i].offsetTop, 'easeOutElastic']}, 800, function() {});
+        }
+
+        if (divArray[i].getAttribute("class") == "column")
+        {
+        	
+        }
+    }
+
+    
+}
+
+
+
+function animateBars()
+{
+	for (var i=0; i<barArray.length; i++)
+	{
+		$(barArray[i]).stop().delay(i * 300).animate({top: [plantTargetTopObjectArray[i].offsetTop, 'easeOutElastic']}, 800, function() {});
+	}
+
+
+}
+
 
 
 
