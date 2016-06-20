@@ -23,27 +23,7 @@ body {
 
 /* Intro */
 
-.line-1, .line-2, .line-3 {
-	line-height: 1.9em;
-}
 
-.line-1, .line-3 {
-	
-	font-size: 42px;
-  	color: white;
-  	font-family: 'Raleway', sans-serif;
-  	text-align: center;
-	
-}
-
-.line-2 {
-	font-size: 42px;
-  	color: white;
-  	font-family: 'Fredoka One', cursive;
-  	text-align: center;
-  	font-weight: 100px
-
-}
 
 .aeroplane {
 	width: 336px;
@@ -51,8 +31,8 @@ body {
 	background: url(../images/aeroplane-slides.png);
 	transition: play-aeroplane 2.5s cubic-bezier(.17,.67,.78,-0.11);
   	-webkit-transition: play-aeroplane 2.5s cubic-bezier(.17,.67,.78,-0.11), 5s;
-  	transform: translate(-200px, 900px);
-  	-webkit-transform: translate(-200px, 900px);
+  	transform: translate(200px, 900px);
+  	-webkit-transform: translate(200px, 900px);
 
 	
 }
@@ -60,8 +40,8 @@ body {
 
 @keyframes play-aeroplane {
 	
-	0%	{ transform: translateX(0px); }
-	100% 		{ transform: translateX(300px); }
+	0%	{ transform: translate(0px); }
+	100% 		{ transform: translate(300px); }
 }
 
 
@@ -124,61 +104,6 @@ body {
 
 
 
-#text-forward-a {
-	position: absolute;
-	float: right;
-	top: 24px;
-    right: 91px;
-    margin: 0;
-
-}
-
-#text-forward-b {
-	position: absolute;
-	width: 140px;
-	margin: 0;
-	float: left;
-	left: 71px;
-    top: 26px;
-}
-
-#text-forward-c {
-	position: absolute;
-	width: 140px;
-	left: 249px;
-    top: 20px;
-}
-
-
-.text-container {
-	width: 800px;
-	height: auto;
-}
-
-#text-container-1 {
-	position: absolute;
-	top: 400px;
-    left: 600px;
-}
-
-.fi-arrow-left {
-	float: left;
-	animation: pulse 4s infinite;
-	-webkit-animation: pulse 4s infinite;
-
-}
-
-.fi-arrow-right { 
-	float: right;
-	animation: pulse 4s infinite;
-	-webkit-animation: pulse 4s infinite;
- 
-  }
-
- .size-48 { font-size: 48px;}
- .size-73 { font-size: 72px; color: rgba(49, 38, 39, 0.68); }
- .size-72 { font-size: 72px; color: hsla(355, 84%, 47%, 0.68); }
- .size-102 { font-size: 102px; color: hsla(355, 84%, 47%, 0.68); }
 
 .cloud2 {
 	position: relative;
