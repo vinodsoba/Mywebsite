@@ -6,7 +6,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-<link href="fonts/foundation-icons/foundation-icons.css" rel="stylesheet">
+<link href="http://www.vinodsoba.com/wp-content/themes/starter/starter/fonts/foundation-icons/foundation-icons/foundation-icons.css" rel="stylesheet">
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="js/function.js" type="text/javascript"></script>
 <style type="text/css">
@@ -32,13 +32,17 @@ body{
 
 #introduction {
 	position: absolute;
-	left: 22px;
+	left: 522px;
 	top:20px;
+	width: 800px;
+
 }
 
 
 .line-1, .line-2, .line-3 {
 	line-height: 1.8em;
+	display: inline-block;
+	margin-right:  7px;
 }
 
 .line-1, .line-3 {
@@ -92,6 +96,10 @@ body{
     padding:20px;
     background-color: #FF4000;
     border-radius: 5px;
+    animation: fadeInRightBig 3s linear;
+    animation-delay: 1s;
+  	-webkit-animation-delay: 1s;
+    -webkit-animation: fadeInRightBig 3s linear;
 
 }
 
@@ -103,8 +111,12 @@ body{
 	left: 71px;
     top: 26px;
     padding:20px;
-    background-color: #FF0000;
+    background-color: #549d17;
     border-radius: 5px;
+    animation: fadeInLeftBig 3s linear;
+    animation-delay: 1s;
+  	-webkit-animation-delay: 1s;
+    -webkit-animation: fadeInLeftBig 3s linear;
 
 }
 
@@ -130,15 +142,29 @@ body{
 .fi-arrow-left {
 	float: left;
 	animation: pulse 4s infinite;
-	-webkit-animation: pulse 4s infinite;
+	animation-name: fadeInDown;
+	animation-iteration-count: 1;
+	animation-delay: 3s;
+  	-webkit-animation-delay: 3s;
+	
+	-webkit-animation-name: fadeInDown;
+	-webkit-animation-iteration-count: 1;
+  	
 
 }
 
 .fi-arrow-right { 
 	float: right;
 	animation: pulse 4s infinite;
+	animation-iteration-count: 1;
+  	animation-name: fadeInDown;
+  	animation-delay: 3s;
+  	-webkit-animation-delay: 3s;
 	-webkit-animation: pulse 4s infinite;
- 
+	-webkit-animation-name: fadeInDown;
+	-webkit-animation-iteration-count: 1;
+
+	
   }
 
 @keyframes pulse {
@@ -155,8 +181,8 @@ body{
 
 
  .size-48 { font-size: 48px;}
- .size-73 { font-size: 72px; color: #fff; }
- .size-72 { font-size: 72px; color: #fff; }
+ .size-73 { font-size: 72px; color: #fff; animation: pulse 4s infinite; -webkit-animation: pulse 4s infinite;}
+ .size-72 { font-size: 72px; color: #fff; animation: pulse 4s infinite; -webkit-animation: pulse 4s infinite;}
  .size-102 { font-size: 102px; color: hsla(355, 84%, 47%, 0.68); }
 
 #earth-1 {
@@ -173,11 +199,12 @@ body{
 }
 
 #vinny-container {
-	width: 14%;
+	width: 17%;
 	height: 198px;
 	overflow: hidden;
 	position: relative;
     top: 212px;
+    
 }
 
 .vinnycontainer {
@@ -188,8 +215,11 @@ body{
   width: 231px;
   height: 207px;
   background: url(images/vinny-slides.png);
-  animation: stop .8s steps(2) infinite;
-  -webkit-animation: stop .8s steps(2) infinite;
+  -webkit-animation-name: bounceInDown;
+  -webkit-animation-duration: 3s;
+  animation-name: bounceInDown;
+  animation-duration: 5s;
+
 }
 
 #intro-banner {
@@ -218,8 +248,8 @@ body{
 	background-size: 150px 300px;
 	width: 150px;
 	height: 300px;
-	animation: rocket 20s  infinite alternate;
-	-webkit-animation: rocket 20s infinite alternate ;
+	animation: rocket 20s;
+	-webkit-animation: rocket 20s;
 	animation-timing-function: linear;
 	-webkit-animation-timing-function: linear;
 	animation-fill-mode: both;
@@ -228,17 +258,174 @@ body{
 }
 
 @keyframes rocket {
-  0%	{ transform: translateY(500px); }
-  25% 	{ transform: translateY(40px) rotate(40deg);  }  
-  50%  	{ transform: rotate(90deg) translateX( 300px) ; }
+  0%	{ transform: translateY(500px) scale(0); }
+  25% 	{ transform: translateY(40px);  }  
+  50%  	{ transform: rotate(90deg); } 
+  100%  { left: 200px;}
 
 }
 
 @-webkit-keyframes rocket {
-   0%	{ transform: translateY(500px); }
-  25% 	{ transform: translateY(40px) rotate(40deg);  }  
-  50%  	{ transform: rotate(90deg) translateX( 300px) ; }
+   0%	{ transform: translateY(500px) scale(0);}
+  25% 	{ transform: translateY(40px);  }  
+  50%  	{ transform: rotate(90deg); }
+   
+  100%  { left: 200px; }
   
+}
+
+@-webkit-keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+
+@-webkit-keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 
@@ -252,7 +439,12 @@ body{
 <body>
 <div id="wrapper">
 <div id="intro-banner" class="text-intro" >Freelance Web Developer</div>
-		  
+	<div id="introduction" class="text">
+
+			<div id="intro-line-1" class="line-1">Hello</div>
+				<div id="intro-line-2" class="line-2">I'm Vinod. </div>
+				  <div id="intro-line-3" class="line-3">I build Websites</div>
+		</div>
 			<div id="text-container-1" class="text-container">
 
 				<i class="fi-arrow-left size-73"></i>
@@ -270,12 +462,7 @@ body{
 
 	<div id="earth-1" class="earth">
 
-		<div id="introduction" class="text">
-
-			<div id="intro-line-1" class="line-1">Hello</div>
-				<div id="intro-line-2" class="line-2">I'm Vinod. </div>
-				  <div id="intro-line-3" class="line-3">I build Websites</div>
-		</div>		
+				
 	</div>
 
 	
