@@ -4,7 +4,11 @@
 @import "partials/mixins";
 
 body {
-	background: #0A7BC4;
+	background: #1a53ff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#1a53ff, #1affff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1a53ff, #1affff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1a53ff, #1affff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1a53ff, #1affff); /* Standard syntax */
 	max-width: 100%;
 	overflow-x: hidden;
 }
@@ -151,9 +155,9 @@ body {
 
 #text-forward-c {
 	position: absolute;
-	width: 140px;
-	left: 249px;
-    top: 20px;
+    width: 140px;
+    left: -50px;
+    top: -77px;
 }
 
 
@@ -250,20 +254,21 @@ body {
 
 
 #cloud1 {
-	position: relative;
-	left: 500px
+	position: absolute;
+	left: 29%;
+    bottom: 597px;
 }
 
 #cloud2 {
-	position: relative;
-	left: 900px;
-	top:30px
+	position: absolute;
+	left: 55%;
+    bottom: 540px;
 }
 
 #cloud3 {
-	position: relative;
-	left: 30px;
-	top:69px
+	position: absolute;
+	left: 20%;
+	bottom: 1000px;
 }
 
 
@@ -271,8 +276,7 @@ body {
 	width: 124px;
   	height: 83px;
   	background: url(../images/clouds/cloud3.png);
-  	animation: moving-clouds 7s steps(2) infinite;
-  	-webkit-animation: moving-clouds 7s steps(2) infinite;
+  	
 	
 }
 
@@ -280,8 +284,7 @@ body {
 	width: 77px;
   	height: 47px;
   	background: url(../images/clouds/cloud2.png);
-  	animation: moving-clouds 7s steps(2) infinite;
-  	-webkit-animation: moving-clouds 7s steps(2) infinite;
+ 
 	
 }
 
@@ -289,8 +292,7 @@ body {
 	width: 77px;
   	height: 47px;
   	background: url(../images/clouds/cloud.png);
-  	animation: moving-clouds 7s steps(2) infinite;
-  	-webkit-animation: moving-clouds 7s steps(2) infinite;
+  
 	
 }
 
@@ -332,11 +334,9 @@ body {
 }
 
 #layer-horizontal-2 {
-	width: 2200px;
+	height: 100%;
 	position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;	
+    top: 100px;
 }
 
 
@@ -488,6 +488,20 @@ body {
 	position: absolute;
 	top: 20px;
 	left: 3200px;
+}
+
+.cactus {
+	position: absolute;
+	left: 1341px;
+	bottom: -4px;
+}
+
+
+#cactus-1 {
+	width: 140px;
+	height: 296px;
+	background: url(../images/cactus.png);
+	z-index: -1111;
 }
 
 #sun-1 {
