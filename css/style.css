@@ -204,7 +204,21 @@ body {
   left: 800px;
 }
 
-/* line 138, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
+#text-1 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+}
+
+/* line 142, ../sass/style.scss */
+#text-2 {
+  position: absolute;
+  top: 30px;
+  left: 40%;
+}
+
+/* line 148, ../sass/style.scss */
 #text-forward-a {
   position: absolute;
   float: right;
@@ -213,7 +227,7 @@ body {
   margin: 0;
 }
 
-/* line 147, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 #text-forward-b {
   position: absolute;
   width: 140px;
@@ -223,7 +237,7 @@ body {
   top: 26px;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 #text-forward-c {
   position: absolute;
   width: 140px;
@@ -231,63 +245,63 @@ body {
   top: -77px;
 }
 
-/* line 164, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .text-container {
   width: 800px;
   height: auto;
 }
 
-/* line 169, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 #text-container-1 {
   position: absolute;
   top: 400px;
   left: 600px;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .fi-arrow-left {
   float: left;
   animation: pulse 4s infinite;
   -webkit-animation: pulse 4s infinite;
 }
 
-/* line 182, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .fi-arrow-right {
   float: right;
   animation: pulse 4s infinite;
   -webkit-animation: pulse 4s infinite;
 }
 
-/* line 189, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .size-48 {
   font-size: 48px;
 }
 
-/* line 190, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .size-73 {
   font-size: 72px;
   color: rgba(49, 38, 39, 0.68);
 }
 
-/* line 191, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .size-72 {
   font-size: 72px;
   color: rgba(221, 19, 36, 0.68);
 }
 
-/* line 192, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .size-102 {
   font-size: 102px;
   color: rgba(221, 19, 36, 0.68);
 }
 
-/* line 194, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .cloud2 {
   position: relative;
   left: 700px;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 #car2 {
   width: 300px;
   height: 300px;
@@ -297,7 +311,7 @@ body {
   border: solid 1px #ddd;
 }
 
-/* line 209, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 #ground-container {
   position: absolute;
   left: 0;
@@ -305,14 +319,14 @@ body {
   width: 3000px;
 }
 
-/* line 217, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .grass {
   width: 2999px;
   height: 90px;
   background: url(../images/zig-zag.png);
 }
 
-/* line 223, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .ground {
   width: 100%;
   height: 20px;
@@ -322,7 +336,7 @@ body {
   z-index: 1111;
 }
 
-/* line 232, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 #vinny-container {
   width: 14%;
   height: 198px;
@@ -332,12 +346,12 @@ body {
   z-index: 1;
 }
 
-/* line 241, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .vinnycontainer {
   left: 800px;
 }
 
-/* line 245, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 #tree1 {
   width: 500px;
   height: 700px;
@@ -347,49 +361,49 @@ body {
   z-index: 999;
 }
 
-/* line 256, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 #cloud1 {
   position: absolute;
   left: 29%;
-  bottom: 597px;
+  top: 107px;
 }
 
-/* line 262, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 #cloud2 {
   position: absolute;
   left: 55%;
-  bottom: 540px;
+  top: 150px;
 }
 
-/* line 268, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 #cloud3 {
   position: absolute;
   left: 20%;
-  bottom: 1000px;
+  top: 110px;
 }
 
-/* line 275, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .cloud {
   width: 124px;
   height: 83px;
   background: url(../images/clouds/cloud3.png);
 }
 
-/* line 283, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .cloud2 {
   width: 77px;
   height: 47px;
   background: url(../images/clouds/cloud2.png);
 }
 
-/* line 291, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 .cloud3 {
   width: 77px;
   height: 47px;
   background: url(../images/clouds/cloud.png);
 }
 
-/* line 300, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 #mushroom-man {
   overflow: hidden;
   position: absolute;
@@ -397,7 +411,7 @@ body {
   left: 1014px;
 }
 
-/* line 307, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .mushroom {
   width: 65px;
   height: 74px;
@@ -406,7 +420,7 @@ body {
   -webkit-animation: play-mushroom 7s steps(3) infinite;
 }
 
-/* line 316, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .london-skyline {
   width: 1919px;
   height: 500px;
@@ -415,46 +429,55 @@ body {
   filter: alpha(opacity=60);
 }
 
-/* line 324, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 #london-skyline-1 {
   position: absolute;
   bottom: 102px;
   left: 1px;
 }
 
-/* line 330, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 #layer-horizontal-1 {
   width: 1880px;
   height: 500px;
 }
 
-/* line 336, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 #layer-horizontal-2 {
-  height: 100%;
   position: absolute;
-  top: 100px;
+  top: 30px;
+  left: 0px;
 }
 
-/* line 345, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
+#my-skills-container {
+  position: absolute;
+  left: 0px;
+  width: 900px;
+  bottom: 1%;
+  height: 80%;
+}
+
+/* line 361, ../sass/style.scss */
 #layer-horizontal-4 {
   width: 500px;
   display: inline-block;
   float: left;
 }
 
-/* line 351, ../sass/style.scss */
+/* line 367, ../sass/style.scss */
 .horizontal {
   width: 5200px;
   height: 900px;
 }
 
-/* line 356, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 .myskills {
   position: absolute;
   left: 2105px;
 }
 
-/* line 361, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .vinny1 {
   width: 231px;
   height: 396px;
@@ -464,20 +487,20 @@ body {
 }
 
 /* myskills */
-/* line 371, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 .barchart {
   position: absolute;
   left: 2200px;
 }
 
-/* line 375, ../sass/style.scss */
+/* line 391, ../sass/style.scss */
 #bar-chart-1 {
   width: 600px;
   height: 400px;
   padding: 20px;
 }
 
-/* line 381, ../sass/style.scss */
+/* line 397, ../sass/style.scss */
 #axis-left {
   width: 5px;
   height: 400px;
@@ -485,7 +508,7 @@ body {
   background: #fff;
 }
 
-/* line 389, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 #axis-main {
   width: 700px;
   height: 5px;
@@ -493,13 +516,13 @@ body {
   background: #fff;
 }
 
-/* line 397, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 #y-axis-text {
   width: 150px;
   height: 400px;
 }
 
-/* line 402, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 #bar-1 {
   width: 50px;
   height: 200px;
@@ -513,27 +536,27 @@ body {
   -webkit-animation-duration: 5s;
 }
 
-/* line 415, ../sass/style.scss */
+/* line 431, ../sass/style.scss */
 .bar {
   position: absolute;
   bottom: 5px;
   left: 12px;
 }
 
-/* line 421, ../sass/style.scss */
+/* line 437, ../sass/style.scss */
 .axistext1 {
   position: absolute;
   left: 2054px;
-  top: 140px;
+  top: 71px;
 }
 
-/* line 427, ../sass/style.scss */
+/* line 443, ../sass/style.scss */
 .axis {
   position: relative;
   left: 20px;
 }
 
-/* line 432, ../sass/style.scss */
+/* line 448, ../sass/style.scss */
 #column-1, #column-2, #column-3, #column-4 {
   font-size: 22px;
   color: white;
@@ -542,7 +565,7 @@ body {
 }
 
 /*  Travel section   */
-/* line 443, ../sass/style.scss */
+/* line 459, ../sass/style.scss */
 #layer-horizontal-3 {
   width: 1500px;
   height: 600px;
@@ -551,62 +574,62 @@ body {
   bottom: 90px;
 }
 
-/* line 451, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 #ground-3 {
   width: 2000px;
   height: 20px;
   background: #BCB907;
 }
 
-/* line 457, ../sass/style.scss */
+/* line 473, ../sass/style.scss */
 .ground3 {
   position: absolute;
   bottom: 0%;
   left: -17px;
 }
 
-/* line 464, ../sass/style.scss */
+/* line 480, ../sass/style.scss */
 #ground-2 {
   width: 2000px;
   height: 90px;
   background: #906610;
 }
 
-/* line 469, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 .ground2 {
   position: absolute;
   top: 100%;
   left: -17px;
 }
 
-/* line 475, ../sass/style.scss */
+/* line 491, ../sass/style.scss */
 .dune {
   position: absolute;
   bottom: 3%;
 }
 
-/* line 480, ../sass/style.scss */
+/* line 496, ../sass/style.scss */
 .dune3 {
   position: absolute;
   bottom: -7%;
   left: 3372px;
 }
 
-/* line 487, ../sass/style.scss */
+/* line 503, ../sass/style.scss */
 .sun {
   position: absolute;
   top: 20px;
   left: 3200px;
 }
 
-/* line 493, ../sass/style.scss */
+/* line 509, ../sass/style.scss */
 .cactus {
   position: absolute;
   left: 1341px;
   bottom: -4px;
 }
 
-/* line 500, ../sass/style.scss */
+/* line 516, ../sass/style.scss */
 #cactus-1 {
   width: 140px;
   height: 296px;
@@ -614,14 +637,14 @@ body {
   z-index: -1111;
 }
 
-/* line 507, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 #sun-1 {
   width: 163px;
   height: 169px;
   background: url(../images/sun.png);
 }
 
-/* line 513, ../sass/style.scss */
+/* line 529, ../sass/style.scss */
 #dunes-1 {
   width: 800px;
   height: 600px;
@@ -629,7 +652,7 @@ body {
   z-index: -9999;
 }
 
-/* line 520, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 #dunes-2 {
   width: 800px;
   height: 600px;
@@ -638,7 +661,7 @@ body {
   left: 800px;
 }
 
-/* line 528, ../sass/style.scss */
+/* line 544, ../sass/style.scss */
 #dunes-3 {
   width: 800px;
   height: 600px;

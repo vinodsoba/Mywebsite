@@ -133,7 +133,17 @@ body {
 	left:800px
 }
 
+#text-1 {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+}
 
+#text-2 {
+	position: absolute;
+	top: 30px;
+	left: 40%;
+}
 
 #text-forward-a {
 	position: absolute;
@@ -256,19 +266,19 @@ body {
 #cloud1 {
 	position: absolute;
 	left: 29%;
-    bottom: 597px;
+    top: 107px;
 }
 
 #cloud2 {
 	position: absolute;
 	left: 55%;
-    bottom: 540px;
+    top: 150px;
 }
 
 #cloud3 {
 	position: absolute;
 	left: 20%;
-	bottom: 1000px;
+	top: 110px;
 }
 
 
@@ -334,19 +344,25 @@ body {
 }
 
 #layer-horizontal-2 {
-	height: 100%;
 	position: absolute;
-    top: 100px;
+    top: 30px;
+    left: 0px;
 }
 
-
+#my-skills-container {
+	position: absolute;
+	left: 0px;
+	width: 900px;
+	bottom: 1%;
+	height: 80%;
+}
 
 
 #layer-horizontal-4 {
 	width: 500px;
 	display: inline-block;
 	float:left;
-}
+}	
 
 .horizontal {
 	width: 5200px;
@@ -421,7 +437,7 @@ body {
 .axistext1 {
 	position: absolute;
 	left: 2054px;
-    top: 140px;
+    top: 71px;
 }
 
 .axis {
