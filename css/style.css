@@ -1,0 +1,890 @@
+/* line 1, ../sass/partials/_mixins.scss */
+.text {
+  font-size: 32px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 30px 60px;
+  max-width: 817px;
+}
+
+/* line 11, ../sass/partials/_mixins.scss */
+_text-mobile-p {
+  font-size: 24px;
+  color: #343434;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 20, ../sass/partials/_mixins.scss */
+.button {
+  background-color: #f45e19;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: -164px -229px;
+  cursor: pointer;
+  float: right;
+}
+
+/* line 34, ../sass/partials/_mixins.scss */
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #f45e19;
+  margin: 0px 0px 0px 216px;
+  display: inline-block;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+/* line 45, ../sass/partials/_mixins.scss */
+.circle p {
+  position: relative;
+  color: #fff;
+  font-size: 17px;
+  right: 56px;
+  width: 86px;
+  text-align: center;
+  top: 5px;
+}
+
+/* line 54, ../sass/partials/_mixins.scss */
+#content_2 a {
+  color: #fff;
+}
+
+/* line 56, ../sass/partials/_mixins.scss */
+.floating-box {
+  display: inline-block;
+  margin: 46px;
+}
+
+/* line 6, ../sass/style.scss */
+body {
+  background: #0A7BC4;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 12, ../sass/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 18, ../sass/style.scss */
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Intro */
+/* line 26, ../sass/style.scss */
+.line-1, .line-2, .line-3 {
+  line-height: 1.9em;
+}
+
+/* line 30, ../sass/style.scss */
+.line-1, .line-3 {
+  font-size: 42px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+/* line 39, ../sass/style.scss */
+.line-2 {
+  font-size: 42px;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  font-weight: 100px;
+}
+
+/* line 48, ../sass/style.scss */
+.aeroplane {
+  width: 336px;
+  height: 286px;
+  background: url(../images/aeroplane-slides.png);
+  transition: play-aeroplane 2.5s cubic-bezier(0.17, 0.67, 0.78, -0.11);
+  -webkit-transition: play-aeroplane 2.5s cubic-bezier(0.17, 0.67, 0.78, -0.11), 5s;
+  transform: translate(-200px, 900px);
+  -webkit-transform: translate(-200px, 900px);
+}
+
+@keyframes play-aeroplane {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+@-webkit-keyframes play-aeroplane {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+/* line 75, ../sass/style.scss */
+#introduction {
+  position: absolute;
+  left: 600px;
+}
+
+/* line 80, ../sass/style.scss */
+.text {
+  font-size: 22px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 68, ../sass/style.scss */
+.skills {
+  font-size: 22px;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+}
+
+/* line 76, ../sass/style.scss */
+=======
+/* line 89, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.text2 {
+  font-size: 22px;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+  background: #99c432;
+  border-radius: 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 90, ../sass/style.scss */
+=======
+/* line 103, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#heading-container-1 {
+  position: absolute;
+  left: 200px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 96, ../sass/style.scss */
+=======
+/* line 109, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#heading-container-2 {
+  position: absolute;
+  left: 400px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 101, ../sass/style.scss */
+=======
+/* line 114, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#heading-container-3 {
+  position: absolute;
+  left: 600px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 107, ../sass/style.scss */
+=======
+/* line 120, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#heading-container-4 {
+  position: absolute;
+  left: 800px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 115, ../sass/style.scss */
+=======
+/* line 127, ../sass/style.scss */
+#text-forward-a {
+  position: absolute;
+  float: right;
+  top: 24px;
+  right: 91px;
+  margin: 0;
+}
+
+/* line 136, ../sass/style.scss */
+#text-forward-b {
+  position: absolute;
+  width: 140px;
+  margin: 0;
+  float: left;
+  left: 71px;
+  top: 26px;
+}
+
+/* line 145, ../sass/style.scss */
+#text-forward-c {
+  position: absolute;
+  width: 140px;
+  left: 249px;
+  top: 20px;
+}
+
+/* line 153, ../sass/style.scss */
+.text-container {
+  width: 800px;
+  height: auto;
+}
+
+/* line 158, ../sass/style.scss */
+#text-container-1 {
+  position: absolute;
+  top: 400px;
+  left: 600px;
+}
+
+/* line 164, ../sass/style.scss */
+.fi-arrow-left {
+  float: left;
+  animation: pulse 4s infinite;
+  -webkit-animation: pulse 4s infinite;
+}
+
+/* line 171, ../sass/style.scss */
+.fi-arrow-right {
+  float: right;
+  animation: pulse 4s infinite;
+  -webkit-animation: pulse 4s infinite;
+}
+
+/* line 178, ../sass/style.scss */
+.size-48 {
+  font-size: 48px;
+}
+
+/* line 179, ../sass/style.scss */
+.size-73 {
+  font-size: 72px;
+  color: rgba(49, 38, 39, 0.68);
+}
+
+/* line 180, ../sass/style.scss */
+.size-72 {
+  font-size: 72px;
+  color: rgba(221, 19, 36, 0.68);
+}
+
+/* line 181, ../sass/style.scss */
+.size-102 {
+  font-size: 102px;
+  color: rgba(221, 19, 36, 0.68);
+}
+
+/* line 183, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.cloud2 {
+  position: relative;
+  left: 700px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 120, ../sass/style.scss */
+=======
+/* line 188, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#car2 {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 0px 20px 0px 20px;
+  display: inline-block;
+  border: solid 1px #ddd;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 130, ../sass/style.scss */
+=======
+/* line 198, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#ground-container {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  width: 3000px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 138, ../sass/style.scss */
+=======
+/* line 206, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.grass {
+  width: 2999px;
+  height: 90px;
+  background: url(../images/zig-zag.png);
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 144, ../sass/style.scss */
+=======
+/* line 212, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.ground {
+  width: 100%;
+  height: 20px;
+  background: #262222;
+  position: relative;
+  bottom: 2%;
+  z-index: 1111;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 153, ../sass/style.scss */
+=======
+/* line 221, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#vinny-container {
+  width: 14%;
+  height: 198px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 107px;
+  z-index: 1;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 162, ../sass/style.scss */
+=======
+/* line 229, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.vinnycontainer {
+  left: 800px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 166, ../sass/style.scss */
+=======
+/* line 233, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#tree1 {
+  width: 500px;
+  height: 700px;
+  background: url(../images/tree.png);
+  position: absolute;
+  bottom: 96px;
+  z-index: 999;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 177, ../sass/style.scss */
+=======
+/* line 244, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#cloud1 {
+  position: relative;
+  left: 500px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 182, ../sass/style.scss */
+=======
+/* line 249, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#cloud2 {
+  position: relative;
+  left: 900px;
+  top: 30px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 188, ../sass/style.scss */
+=======
+/* line 255, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#cloud3 {
+  position: relative;
+  left: 30px;
+  top: 69px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 195, ../sass/style.scss */
+=======
+/* line 262, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.cloud {
+  width: 124px;
+  height: 83px;
+  background: url(../images/clouds/cloud3.png);
+  animation: moving-clouds 7s steps(2) infinite;
+  -webkit-animation: moving-clouds 7s steps(2) infinite;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 204, ../sass/style.scss */
+=======
+/* line 271, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.cloud2 {
+  width: 77px;
+  height: 47px;
+  background: url(../images/clouds/cloud2.png);
+  animation: moving-clouds 7s steps(2) infinite;
+  -webkit-animation: moving-clouds 7s steps(2) infinite;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 213, ../sass/style.scss */
+=======
+/* line 280, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.cloud3 {
+  width: 77px;
+  height: 47px;
+  background: url(../images/clouds/cloud.png);
+  animation: moving-clouds 7s steps(2) infinite;
+  -webkit-animation: moving-clouds 7s steps(2) infinite;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 223, ../sass/style.scss */
+=======
+/* line 290, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#mushroom-man {
+  overflow: hidden;
+  position: absolute;
+  bottom: 107px;
+  left: 1014px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 230, ../sass/style.scss */
+=======
+/* line 297, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.mushroom {
+  width: 65px;
+  height: 74px;
+  background: url(../images/sprite-mushroomman.png);
+  animation: play-mushroom 7s steps(3) infinite;
+  -webkit-animation: play-mushroom 7s steps(3) infinite;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 239, ../sass/style.scss */
+=======
+/* line 306, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.london-skyline {
+  width: 1919px;
+  height: 500px;
+  background: url(../images/london-skyline.png);
+  opacity: 0.3;
+  filter: alpha(opacity=60);
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 247, ../sass/style.scss */
+=======
+/* line 314, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#london-skyline-1 {
+  position: absolute;
+  bottom: 102px;
+  left: 1px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 253, ../sass/style.scss */
+=======
+/* line 320, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#layer-horizontal-1 {
+  width: 1880px;
+  height: 500px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 259, ../sass/style.scss */
+=======
+/* line 326, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#layer-horizontal-2 {
+  width: 2200px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 270, ../sass/style.scss */
+=======
+/* line 335, ../sass/style.scss */
+#layer-horizontal-3 {
+  width: 1500px;
+  height: 600px;
+  display: inline-block;
+  background: blue;
+  float: right;
+  display: none;
+}
+
+/* line 344, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#layer-horizontal-4 {
+  width: 500px;
+  display: inline-block;
+  float: left;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 276, ../sass/style.scss */
+=======
+/* line 350, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.horizontal {
+  width: 5200px;
+  height: 900px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 281, ../sass/style.scss */
+=======
+/* line 355, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.myskills {
+  position: absolute;
+  left: 2105px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 286, ../sass/style.scss */
+=======
+/* line 360, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.vinny1 {
+  width: 231px;
+  height: 396px;
+  background: url(../images/vinny-slides.png);
+  animation: stop 0.8s steps(2) infinite;
+  -webkit-animation: stop 0.8s steps(2) infinite;
+}
+
+/* myskills */
+<<<<<<< HEAD:css/style.css
+/* line 296, ../sass/style.scss */
+=======
+/* line 370, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.barchart {
+  position: absolute;
+  left: 2200px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 300, ../sass/style.scss */
+=======
+/* line 374, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#bar-chart-1 {
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 306, ../sass/style.scss */
+=======
+/* line 380, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#axis-left {
+  width: 5px;
+  height: 400px;
+  opacity: 0.4;
+  background: #fff;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 314, ../sass/style.scss */
+=======
+/* line 388, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#axis-main {
+  width: 700px;
+  height: 5px;
+  opacity: 0.4;
+  background: #fff;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 322, ../sass/style.scss */
+=======
+/* line 396, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#y-axis-text {
+  width: 150px;
+  height: 400px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 327, ../sass/style.scss */
+=======
+/* line 401, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#bar-1 {
+  width: 50px;
+  height: 200px;
+  background-color: #841111;
+  overflow: hidden;
+  animation-name: slideInUp;
+  animation-fill-mode: both;
+  animation-duration: 5s;
+  -webkit-animation-name: slideInUp;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-duration: 5s;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 340, ../sass/style.scss */
+=======
+/* line 414, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.bar {
+  position: absolute;
+  bottom: 5px;
+  left: 12px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 346, ../sass/style.scss */
+=======
+/* line 420, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.axistext1 {
+  position: absolute;
+  left: 2054px;
+  top: 140px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 352, ../sass/style.scss */
+=======
+/* line 426, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+.axis {
+  position: relative;
+  left: 20px;
+}
+
+<<<<<<< HEAD:css/style.css
+/* line 357, ../sass/style.scss */
+=======
+/* line 431, ../sass/style.scss */
+>>>>>>> parent of f7d63ed... updates to homepage with rocket animation 20/06/16 12:10:source/css/style.css
+#column-1, #column-2, #column-3, #column-4 {
+  font-size: 22px;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  line-height: 3.9em;
+}
+
+/*  Travel section   */
+/* line 368, ../sass/style.scss */
+#layer-horizontal-3 {
+  width: 1500px;
+  height: 600px;
+  position: absolute;
+  left: 3016px;
+  bottom: 90px;
+}
+
+/* line 376, ../sass/style.scss */
+#ground-3 {
+  width: 2000px;
+  height: 20px;
+  background: #BCB907;
+}
+
+/* line 382, ../sass/style.scss */
+.ground3 {
+  position: absolute;
+  bottom: 0%;
+  left: -17px;
+}
+
+/* line 389, ../sass/style.scss */
+#ground-2 {
+  width: 2000px;
+  height: 90px;
+  background: #906610;
+}
+
+/* line 394, ../sass/style.scss */
+.ground2 {
+  position: absolute;
+  top: 100%;
+  left: -17px;
+}
+
+/* line 400, ../sass/style.scss */
+.dune {
+  position: absolute;
+  bottom: 3%;
+}
+
+/* line 405, ../sass/style.scss */
+.dune3 {
+  position: absolute;
+  bottom: -7%;
+  left: 3372px;
+}
+
+/* line 412, ../sass/style.scss */
+.sun {
+  position: absolute;
+  top: 20px;
+  left: 3200px;
+}
+
+/* line 418, ../sass/style.scss */
+#sun-1 {
+  width: 163px;
+  height: 169px;
+  background: url(../images/sun.png);
+}
+
+/* line 424, ../sass/style.scss */
+#dunes-1 {
+  width: 800px;
+  height: 600px;
+  background: url(../images/dune1.png);
+  z-index: -9999;
+}
+
+/* line 431, ../sass/style.scss */
+#dunes-2 {
+  width: 800px;
+  height: 600px;
+  background: url(../images/dune2.png);
+  z-index: -9999;
+  left: 800px;
+}
+
+/* line 439, ../sass/style.scss */
+#dunes-3 {
+  width: 800px;
+  height: 600px;
+  background: url(../images/dune1.png);
+  z-index: -9999;
+}
+
+/* Animation */
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+    transform: scale(0);
+  }
+  to {
+    transform: translate3d(0, 100%, 0);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    transform: scale(0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transform: scale(1);
+  }
+}
+@keyframes play-mushroom {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+@-webkit-keyframes play-mushroom {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+@-webkit-keyframes play {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -500px;
+  }
+}
+@keyframes play-rabbit {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -300px;
+  }
+}
+@-webkit-keyframes play-rabbit {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -300px;
+  }
+}
