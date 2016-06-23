@@ -1,6 +1,7 @@
 var vinny = document.getElementById("vinny-container");
 var intro = document.getElementById("introduction");
 var flyingAirplane = document.getElementById("aeroplane-slides-1");
+var alienSpaceShip = document.getElementById("alien-spacecraft-1");
 var aeroplaneArray = new Array();
 aeroplaneArray.push(flyingAirplane);
 var isVinnyStatic = true;
@@ -17,35 +18,15 @@ var h = window.innerHeight;
 var axisPositionTopObject = new Array();
 axisPositionTopObject.push(barChart, barChart2);
 
+
 //animate the sprite
 
 window.onload = function(){
 	
-	getWindow();
 	storeDivs();
-	move_box();
+	animateAlienSpaceship();
+
 }
-
-function getWindow() {  
-    
-}
-
-
-function move_box() {
-      var flyingAirplane = document.getElementById("aeroplane-slides-1");
-      set_translate(flyingAirplane, 100);
- }
-
-	   
-    
-function set_translate(e, pix) {
-      e.style["-webkit-transform"] = "translate(0px, "+ pix +"px)";
-      e.style["-moz-transform"] = "translate(0px, -" + pix +"px)";
-      e.style["-ms-transform"] = "translate(0px, -" + pix + "px)";
-      e.style["-o-transform"] = "translate(0px, " + pix  + "px)";
-      e.style["transform"] = "translate(0px, -" + pix + "px)";
-}
-    
 
 
 function storeDivs()
@@ -74,7 +55,14 @@ function storeDivs()
     
 }
 
+function animateAlienSpaceship(){
 
+	alienSpaceShip.addEventListener("onload", function(){
+
+		alienSpaceShip.style.animation = " aliens 10s steps(5) linear infinite";
+	});
+	
+}
 
 function animateBars()
 {
@@ -92,7 +80,8 @@ function animateBars()
 function onScrollEventHandler(ev)
  {
     if (w >= 1925){
-   		scroll();   	
+   		scroll(); 
+   		  	
     }
     else{  console.log(innerHTML = "Width: " + w + "<br>Height: " + h); }
    
@@ -119,7 +108,7 @@ function scroll(){
              console.log("up");
              var y=document.getElementById('vinny-container').offsetLeft;
             y = y - 100;
-            document.getElementById('vinny-container').style.left= y + "px";
+            document.getElementById('vinny-container').style.left += y + "px";
            
              
           }

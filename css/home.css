@@ -17,6 +17,7 @@ body{
 	height: 100%;
   background-blend-mode: hard-light;
   background-color: #28186d;	
+
 	}
 
 #wrapper {
@@ -39,6 +40,22 @@ body{
   width: 172px;
   height: 172px; 
   padding:5px;
+}
+
+
+#alien-spacecraft-1 {
+    width: 160px;
+    height: 160px;
+    background: url(../images/alienspaceship.png);
+    background-size: 160px 160px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    /*animation: aliens 1s linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation: aliens 1s linear;*/
+    
 }
 
 
@@ -177,6 +194,18 @@ body{
   50% {transform: scale(1.5);}
   100% {transform: scale(1);}
 }
+
+
+@keyframes aliens {
+  from { transform: translate(100px, 200px); }
+  to {   transform: translate(100px, 200px); }
+}
+
+@-webkit-keyframes aliens {
+   from { transform: translate(100px, 200px); }
+  to {   transform: translate(100px, 200px); }
+}
+
 
 
  .size-48 { font-size: 48px;}
