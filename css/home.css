@@ -197,13 +197,13 @@ body{
 
 
 @keyframes aliens {
-  from { transform: translate(100px, 200px); }
-  to {   transform: translate(100px, 200px); }
+  from { transform: scale(0); }
+  to {   transform: scale(1); }
 }
 
 @-webkit-keyframes aliens {
-   from { transform: translate(100px, 200px); }
-  to {   transform: translate(100px, 200px); }
+   from { transform: scale(0); }
+  to {   transform: scale(1); }
 }
 
 

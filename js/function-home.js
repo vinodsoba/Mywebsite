@@ -10,16 +10,13 @@ window.onload = function(){
 
 
 
-function animateAlienSpaceship(alienSpaceShip){
+function animateAlienSpaceship(){
+
+var alienSpaceShip = document.getElementById("alien-spacecraft-1");
 	
-	var alienSpaceShip = document.getElementById("alien-spacecraft-1");
-
-	alienSpaceShip.addEventListener("onscroll", function(){
-
-		alienSpaceShip.style.animation = "aliens 6s linear";
+		alienSpaceShip.style.animation = "aliens 2s linear";
 		alienSpaceShip.style.left = "10px";
-	});
-
+	
 
 	
 }
