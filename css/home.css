@@ -197,13 +197,17 @@ body{
 
 
 @keyframes aliens {
-  from { transform: scale(0); }
-  to {   transform: scale(1); }
+  0% { transform: scale(0); }
+  25% { transform: scale(1);  }
+  50% { transform: translateX(800px); }
+  100% {  transform: translateY( -900px); }
 }
 
 @-webkit-keyframes aliens {
-   from { transform: scale(0); }
-  to {   transform: scale(1); }
+  0% { transform: scale(0); }
+  25% { transform: scale(1);  }
+  50% { transform: translateX(800px); }
+  100% {  transform: translateY( -900px); }
 }
 
 
@@ -273,7 +277,7 @@ body{
 }
 
 .vinnycontainer {
-	left: 808px
+	left: 823px
 }
 
 .vinny1 {

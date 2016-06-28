@@ -492,29 +492,35 @@ body {
 }
 
 /* line 389, ../sass/style.scss */
-.vinny1 {
+#vinny {
   width: 231px;
   height: 396px;
   background: url(../images/vinny-slides.png);
-  animation: stop 0.8s steps(2) infinite;
-  -webkit-animation: stop 0.8s steps(2) infinite;
+  animation: play 1s steps(2) infinite 1s;
+  -webkit-animation: play 1s steps(2) infinite 1s;
+}
+
+/* line 397, ../sass/style.scss */
+#vinny.off {
+  animation-name: none;
+  -webkit-animation-name: none;
 }
 
 /* myskills */
-/* line 399, ../sass/style.scss */
+/* line 405, ../sass/style.scss */
 .barchart {
   position: absolute;
   left: 2200px;
 }
 
-/* line 403, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 #bar-chart-1 {
   width: 600px;
   height: 400px;
   padding: 20px;
 }
 
-/* line 409, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 #axis-left {
   width: 5px;
   height: 400px;
@@ -522,7 +528,7 @@ body {
   background: #fff;
 }
 
-/* line 417, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 #axis-main {
   width: 700px;
   height: 5px;
@@ -530,13 +536,13 @@ body {
   background: #fff;
 }
 
-/* line 425, ../sass/style.scss */
+/* line 431, ../sass/style.scss */
 #y-axis-text {
   width: 150px;
   height: 400px;
 }
 
-/* line 430, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 #bar-1 {
   width: 50px;
   height: 200px;
@@ -550,27 +556,27 @@ body {
   -webkit-animation-duration: 5s;
 }
 
-/* line 443, ../sass/style.scss */
+/* line 449, ../sass/style.scss */
 .bar {
   position: absolute;
   bottom: 5px;
   left: 12px;
 }
 
-/* line 449, ../sass/style.scss */
+/* line 455, ../sass/style.scss */
 .axistext1 {
   position: absolute;
   left: 2054px;
   top: 71px;
 }
 
-/* line 455, ../sass/style.scss */
+/* line 461, ../sass/style.scss */
 .axis {
   position: relative;
   left: 20px;
 }
 
-/* line 460, ../sass/style.scss */
+/* line 466, ../sass/style.scss */
 #column-1, #column-2, #column-3, #column-4 {
   font-size: 22px;
   color: white;
@@ -579,7 +585,7 @@ body {
 }
 
 /*  Travel section   */
-/* line 471, ../sass/style.scss */
+/* line 477, ../sass/style.scss */
 #layer-horizontal-3 {
   width: 1500px;
   height: 600px;
@@ -588,77 +594,102 @@ body {
   bottom: 90px;
 }
 
-/* line 479, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 #ground-3 {
   width: 2000px;
   height: 20px;
   background: #BCB907;
 }
 
-/* line 485, ../sass/style.scss */
+/* line 491, ../sass/style.scss */
 .ground3 {
   position: absolute;
   bottom: 0%;
   left: -17px;
 }
 
-/* line 492, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 #ground-2 {
   width: 2000px;
   height: 90px;
   background: #906610;
 }
 
-/* line 497, ../sass/style.scss */
+/* line 503, ../sass/style.scss */
 .ground2 {
   position: absolute;
   top: 100%;
   left: -17px;
 }
 
-/* line 503, ../sass/style.scss */
+/* line 509, ../sass/style.scss */
 .dune {
   position: absolute;
   bottom: 3%;
 }
 
-/* line 508, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
 .dune3 {
   position: absolute;
   bottom: -7%;
   left: 3372px;
 }
 
-/* line 515, ../sass/style.scss */
+/* line 521, ../sass/style.scss */
 .sun {
   position: absolute;
   top: 20px;
   left: 3200px;
 }
 
-/* line 521, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 .cactus {
   position: absolute;
   left: 1341px;
   bottom: -4px;
 }
 
-/* line 528, ../sass/style.scss */
+/* line 534, ../sass/style.scss */
 #cactus-1 {
   width: 140px;
   height: 296px;
   background: url(../images/cactus.png);
   z-index: -1111;
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
 }
 
-/* line 535, ../sass/style.scss */
+/* line 543, ../sass/style.scss */
+.pause {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+@keyframes cactus {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: traslateX(200px);
+  }
+}
+@-webkit-keyframes cactus {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: traslateX(200px);
+  }
+}
+/* line 562, ../sass/style.scss */
 #sun-1 {
   width: 163px;
   height: 169px;
   background: url(../images/sun.png);
+  z-index: -9999;
 }
 
-/* line 541, ../sass/style.scss */
+/* line 569, ../sass/style.scss */
 #dunes-1 {
   width: 800px;
   height: 600px;
@@ -666,7 +697,7 @@ body {
   z-index: -9999;
 }
 
-/* line 548, ../sass/style.scss */
+/* line 576, ../sass/style.scss */
 #dunes-2 {
   width: 800px;
   height: 600px;
@@ -675,7 +706,7 @@ body {
   left: 800px;
 }
 
-/* line 556, ../sass/style.scss */
+/* line 584, ../sass/style.scss */
 #dunes-3 {
   width: 800px;
   height: 600px;

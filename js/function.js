@@ -1,3 +1,5 @@
+var cactusContainer = document.getElementById("cactus-1");
+
 var vinny = document.getElementById("vinny-container");
 var intro = document.getElementById("introduction");
 var flyingAirplane = document.getElementById("aeroplane-slides-1");
@@ -18,51 +20,75 @@ var h = window.innerHeight;
 var axisPositionTopObject = new Array();
 axisPositionTopObject.push(barChart, barChart2);
 
+var treeContainer = document.getElementById("tree1");
+treeContainerArray = new Array(treeContainer);
+var layerHorizontal = document.getElementsByTagName("div");
+layerHorizontal = new Array();
+horizontalContainerArray = new Array();
 
 //animate the sprite
-
-window.onload = function(){
-	
+window.onload = function(){	
+	cactus();
 	storeDivs();
-	animateAlienSpaceship();
-
+	setLayerHorizontal();
 }
+
 
 
 function storeDivs()
 {
-	var divArray = document.getElementsByTagName("div");
-	
-    for (var i=0; i<divArray.length; i++)
+	var treeContainerArray = document.getElementById("tree1");
+	treeContainerArray = new Array();
+	var layerHorizontal = document.getElementsByTagName("div");
+
+
+    for (var i=0; i<layerHorizontal.length; i++)
 	{
-        if (divArray[i].getAttribute("class") == "axis")
+        if (layerHorizontal[i].getAttribute("class") == "tree")
 		{
-			barArray.push(divArray[i]);
+			treeContainerArray.push(layerHorizontal[i]);
         }
-
-        if (divArray[i].getAttribute("class") == "bar")
-        {
-        
-        	divArray[i].style.animate({top: [axisPositionTopObject[i].offsetTop, 'easeOutElastic']}, 800, function() {});
-        }
-
-        if (divArray[i].getAttribute("class") == "column")
-        {
-        	
+		
+		if (layerHorizontal[i].getAttribute("class") == "horizontal")
+		{
+			horizontalContainerArray.push(layerHorizontal[i]);
         }
     }
-
-    
 }
 
-function animateAlienSpaceship(){
 
-	alienSpaceShip.addEventListener("onload", function(){
-
-		alienSpaceShip.style.animation = " aliens 10s steps(5) linear infinite";
-	});
+function setLayerHorizontal(){
 	
+	if(horizontalContainerArray){
+
+		horizontalContainerArray[2].style.width = "600px";
+
+		console.log(horizontalContainerArray[2]);
+	}
+	else {
+		console.log("false");
+	}
+
+
 }
+
+
+
+function cactus(){
+
+	var cactusContainer = document.getElementById("cactus-1");		
+	if(w >= 2000){
+
+			cactusContainer.style.animation ="cactus 2s ease-in";
+			
+		}
+		$(this).addClass('pause');
+
+			
+}
+console.log(w);
+
+
 
 function animateBars()
 {
@@ -75,11 +101,9 @@ function animateBars()
 }
 
 
-
-
 function onScrollEventHandler(ev)
  {
-    if (w >= 1925){
+    if (w >= 125){
    		scroll(); 
    		  	
     }
@@ -96,35 +120,45 @@ if(el.addEventListener)
 else if (el.attachEvent)
      el.attachEvent('onscroll', onScrollEventHandler); 
 
+
+
+
+
 function scroll(){
-	var lastScroll = 0;
+	var vinnyContainer = document.getElementById("vinny-container");
+	var vinnyContainerTimer = 0;
+	vinnyContainerArray = new Array();
 	
-      $(window).scroll(function(event){
-          //Sets the current scroll position
-          var st = $(this).scrollTop();
-          //Determines up-or-down scrolling
-          if (st > lastScroll){
-             //Replace this with your function call for downward-scrolling
-             console.log("up");
-             var y=document.getElementById('vinny-container').offsetLeft;
-            y = y - 100;
-            document.getElementById('vinny-container').style.left += y + "px";
-           
-             
-          }
-          else {
-             //Replace this with your function call for upward-scrolling
-            console.log("down");
-            
-  			var x=document.getElementById('vinny-container').offsetLeft;
-            x= x + 100;
-            document.getElementById('vinny-container').style.left= x + "px";
-          
-            console.log(vinny);
-          }
-          //Updates scroll position
-          lastScroll = st;
-      });
+
+		$(window).scroll(function(event){
+		var scrollPosCur = $(this).scrollLeft();
+		vinnyContainer.addEventListener("scroll", onScrollEventHandler, false);
+
+		if (vinnyContainerTimer > scrollPosCur){
+			
+				
+			vinnyContainerTimer += 1;
+			
+			$(vinnyContainer).stop().animate({"marginLeft": ($(window).scrollLeft() + 10) + "px"}, "ease-in");
+			console.log("up");
+			
+		}
+		if(vinnyContainerTimer < scrollPosCur){
+
+				vinnyContainerTimer -= 1;
+				$(vinnyContainer).stop().animate({"marginLeft": ($(window).scrollLeft() + 10) + "px"}, "ease-in");
+				console.log("down");
+
+				
+
+		}
+		
+
+
+		
+	});
+
+	
 }
 /*
 
