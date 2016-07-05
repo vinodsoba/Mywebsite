@@ -1,10 +1,12 @@
-
 var alienSpaceShip = document.getElementById("alien-spacecraft-1");
+var vinnyContainer = document.getElementById("vinny-container");
 
 
 window.onload = function(){
 	
 	animateAlienSpaceship();
+	vinnyContainerHide();
+	
 
 }
 //animate the sprite
@@ -21,4 +23,30 @@ function animateAlienSpaceship(){
 
 	
 }
+
+function vinnyContainerHide(){
+	var textForwardContainer = document.getElementById("text-forward-a");
+
+	textForwardContainer.addEventListener("mouseover", showVinnyContainer, false);
+		
+		function showVinnyContainer(){
+		
+			var vinnyContainer = document.getElementById("vinny-container");
+			$("#vinny").removeClass("vinny1");
+				$("#vinny").addClass("vinny2");	
+			
+				window.setTimeout(function(){ 
+        			window.location.href = "http://localhost/mywebsite/source/";
+        		}, 2000);
+    			
+			console.log("Hello World");
+
+		}
+	
+}
+
+
+
+
+			
 

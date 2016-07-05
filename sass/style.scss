@@ -245,7 +245,7 @@ body {
 .ground {
 	width: 100%;
 	height: 20px;
-	background: #262222;
+	background: #999219;
 	position: relative;
 	bottom: 2%;
 	z-index: 1111;
@@ -390,11 +390,16 @@ body {
   width: 231px;
   height: 396px;
   background: url(../images/vinny-slides.png);
-  animation: play 1s steps(2)  infinite 1s ;
+  /*animation: play 1s steps(2)  infinite 1s ;
+  -webkit-animation: play 1s steps(2) infinite 1s;*/
+}
+
+.on {
+	animation: play 1s steps(2)  infinite 1s ;
   -webkit-animation: play 1s steps(2) infinite 1s;
 }
 
-#vinny.off {
+.off {
 	animation-name: none;
     -webkit-animation-name: none;
 	
@@ -406,6 +411,38 @@ body {
 	position: absolute;
 	left: 2200px;
 }
+
+.postman {
+	position: absolute;
+	left: 1900px;
+	bottom: 34px; 
+}
+
+
+.section-text {
+	position: relative;
+	top: 208px;
+	left:4px
+}
+
+#section-1 {
+	
+  font-size: 22px;
+  color: #000;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+}
+
+
+#postman1 {
+	width: 400px;
+	height: 500px;
+	background: url(../images/postman.png);
+	background-size: 400px 500px
+
+}
+
+
 #bar-chart-1 {	
 	width: 600px;
 	height: 400px;

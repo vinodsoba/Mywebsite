@@ -10,13 +10,13 @@
 	}
 
 body{
-	background-image: url(../images/space-background.jpg); 
+	background-image: url(../images/photo-14.jpg); 
 	background-repeat: no-repeat;
   background-size: 100%;
 	width: 100%;
 	height: 100%;
   background-blend-mode: hard-light;
-  background-color: #28186d;	
+  background-color: #33186d;	
 
 	}
 
@@ -60,12 +60,12 @@ body{
 
 
 
-.line-1, .line-2, .line-3 {
+.line-1, .line-2, .line-3, .line-4 {
 	line-height: 1.8em;
 
 }
 
-.line-1, .line-2, .line-3 {	
+.line-1, .line-2, .line-3, .line-4 {	
 	font-size: 28px;
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -76,6 +76,14 @@ body{
   font-size: 44px;
   font-family: 'Fredoka One', sans-serif;
   margin-top: -21px
+}
+
+#intro-line-4 {
+  font-size: 44px;
+  font-family: 'Droid Sans', sans-serif;
+  margin-top: -21px;
+  text-align: center;
+  width: 560px;
 }
 
 .text {
@@ -267,7 +275,7 @@ body{
 }
 
 #vinny-container {
-	width: 17%;
+	width: 29%;
 	height: 198px;
 	overflow: hidden;
 	position: relative;
@@ -289,6 +297,22 @@ body{
   animation-name: bounceInDown;
   animation-duration: 5s;
 
+}
+
+.vinny2 {
+  width: 238px;
+  height: 200px;
+  background: url(../images/vinny-slides.png);
+  background-position: -646px 0px;
+  overflow: hidden;
+  animation: vinnyFliesOff 3s steps(2) infinite;
+  -webkit-animation: vinnyFliesOff 3s steps(2)  infinite;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
 }
 
 #intro-banner {
@@ -325,14 +349,25 @@ body{
     
 }
 
+@keyframes vinnyFliesOff {
+    from {  background-position: -646px 0px;  transform:  translateX(0px); }
+    to   {  background-position: -1190px 0px; transform:  translateX(580px); }
+}
+
+@-webkit-keyframes vinnyFliesOff {
+    from {  background-position: -646px 0px;  transform:  translateX(0px); }
+    to   {  background-position: -1190px 0px; transform:  translateX(580px); }
+}
+
+
 @keyframes rocket {
     from {  transform: rotate(360deg) translateX(180px); }
-    to   {  transform: rotate(0deg) translateX(180px); }
+    to   {  transform: rotate(0deg)   translateX(180px); }
 }
 
 @-webkit-keyframes rocket {
-   from {  transform: rotate(360deg) translateX(150px); }
-    to   {  transform: rotate(0deg) translateX(150px); }
+   from  {  transform: rotate(360deg) translateX(150px); }
+    to   {  transform: rotate(0deg)   translateX(150px); }
 }
 
 @-webkit-keyframes fadeInRightBig {

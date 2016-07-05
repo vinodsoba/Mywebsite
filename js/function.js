@@ -1,12 +1,11 @@
 var cactusContainer = document.getElementById("cactus-1");
-
 var vinny = document.getElementById("vinny-container");
 var intro = document.getElementById("introduction");
 var flyingAirplane = document.getElementById("aeroplane-slides-1");
 var alienSpaceShip = document.getElementById("alien-spacecraft-1");
 var aeroplaneArray = new Array();
 aeroplaneArray.push(flyingAirplane);
-var isVinnyStatic = true;
+
 var barChart = document.getElementById("bar-chart-1"); 
 var barChart2 = document.getElementById("bar-chart-2"); 
 var barArray = new Array();
@@ -31,6 +30,8 @@ window.onload = function(){
 	cactus();
 	storeDivs();
 	setLayerHorizontal();
+	isVinnyStatic();
+
 }
 
 
@@ -100,6 +101,20 @@ function animateBars()
 
 }
 
+function isVinnyStatic(){
+
+	var x = document.getElementById("vinny-container");
+	var xArray = new Array();
+	if ( x ){
+		for(var i=0; i>xArray; i++){
+			
+			console.log(i);
+			}
+		} else {
+			console.log("false");
+		}
+
+}
 
 function onScrollEventHandler(ev)
  {
