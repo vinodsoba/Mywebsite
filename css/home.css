@@ -299,7 +299,7 @@ body{
 
 }
 
-.vinny2 {
+.vinnyLearnMore {
   width: 238px;
   height: 200px;
   background: url(../images/vinny-slides.png);
@@ -314,6 +314,24 @@ body{
   animation-duration: 2s;
   -webkit-animation-duration: 2s;
 }
+
+
+.vinnyPortfolio {
+  width: 231px;
+  height: 200px;
+  background: url(../images/vinny-slides.png);
+  background-position: -646px 0px;
+  overflow: hidden;
+  animation: vinnyFliesOffPortfolio 3s steps(2) infinite;
+  -webkit-animation: vinnyFliesOffPortfolio 3s steps(2)  infinite;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+}
+
 
 #intro-banner {
 	background-color: #fff;
@@ -348,6 +366,18 @@ body{
                                                       IE 10+, Safari 5 */
     
 }
+
+
+@keyframes vinnyFliesOffPortfolio {
+    from {  background-position: -646px 200px;  transform:  translateX(0px); }
+    to   {  background-position: -1190px 200px; transform:  translateX(-880px); }
+}
+
+@-webkit-keyframes vinnyFliesOffPortfolio {
+    from {  background-position: -646px 200px;  transform:  translateX(0px); }
+    to   {  background-position: -1190px 200px; transform:  translateX(-880px); }
+}
+
 
 @keyframes vinnyFliesOff {
     from {  background-position: -646px 0px;  transform:  translateX(0px); }

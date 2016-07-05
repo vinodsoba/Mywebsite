@@ -6,6 +6,7 @@ window.onload = function(){
 	
 	animateAlienSpaceship();
 	vinnyContainerHide();
+	vinnyDisplayPort();
 	
 
 }
@@ -14,15 +15,10 @@ window.onload = function(){
 
 
 function animateAlienSpaceship(){
-
-		var alienSpaceShip = document.getElementById("alien-spacecraft-1");
-	
+		var alienSpaceShip = document.getElementById("alien-spacecraft-1");	
 		alienSpaceShip.style.animation = "aliens 10s ease-in infinite";
-		
-	
-
-	
 }
+
 
 function vinnyContainerHide(){
 	var textForwardContainer = document.getElementById("text-forward-a");
@@ -33,18 +29,39 @@ function vinnyContainerHide(){
 		
 			var vinnyContainer = document.getElementById("vinny-container");
 			$("#vinny").removeClass("vinny1");
-				$("#vinny").addClass("vinny2");	
+				$("#vinny").addClass("vinnyLearnMore");	
 			
 				window.setTimeout(function(){ 
         			window.location.href = "http://localhost/mywebsite/source/";
         		}, 2000);
     			
-			console.log("Hello World");
+			
 
 		}
 	
 }
 
+
+function vinnyDisplayPort(){
+	var textForwardContainer = document.getElementById("text-forward-b");
+
+	textForwardContainer.addEventListener("mouseover", showVinnyContainer, false);
+		
+		function showVinnyContainer(){
+		
+			var vinnyContainer = document.getElementById("vinny-container");
+			$("#vinny").removeClass("vinny1");
+				$("#vinny").addClass("vinnyPortfolio");	
+			
+				//window.setTimeout(function(){ 
+        			//window.location.href = "http://localhost/mywebsite/source/";
+        		//}, 2000);
+    			
+			
+
+		}
+	
+}
 
 
 
