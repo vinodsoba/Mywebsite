@@ -27,10 +27,12 @@ body{
 	}
 
 #introduction {
+  background-image: url(../images/intro-banner.png);
 	position: relative;
 	margin: 0 auto;
 	top:63px;
-	width: 711px;
+	width: 607px;
+  height: 167px;
   left: 20px;
 
 }
@@ -58,14 +60,24 @@ body{
     
 }
 
+.line-2 {
+  position: absolute;
+  left: 125px;
+  top: -4px; 
+}
 
+.line-3 {
+  width: 458px;
+  position: absolute;
+  top: 94px;
+}
 
-.line-1, .line-2, .line-3, .line-4 {
+.line-2, .line-3, .line-4 {
 	line-height: 1.8em;
 
 }
 
-.line-1, .line-2, .line-3, .line-4 {	
+ .line-2, .line-3, .line-4 {	
 	font-size: 28px;
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -75,7 +87,7 @@ body{
 #intro-line-2 {
   font-size: 44px;
   font-family: 'Fredoka One', sans-serif;
-  margin-top: -21px
+  width:327px;
 }
 
 #intro-line-4 {
@@ -118,7 +130,6 @@ body{
   padding:20px;
   background-color: #FF4000;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px #000000;
   animation: fadeInRightBig 3s linear;
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
@@ -136,7 +147,6 @@ body{
   padding:20px;
   background-color: #549d17;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px #000000;
   animation: fadeInLeftBig 3s linear;
   animation-delay: 1s;
 	-webkit-animation-delay: 1s;
@@ -241,7 +251,7 @@ body{
 
 .earth {
 	position: relative;
-	top: 206px;
+	top: 352px;
   left: 851px;
 
 }
@@ -278,24 +288,25 @@ body{
 	width: 29%;
 	height: 198px;
 	overflow: hidden;
-	position: relative;
-  top: 212px;
+	position: absolute;
+  top: 351px;
   z-index: 1;
+  -webkit-animation-name: bounceInDown;
+  -webkit-animation-duration: 3.3s;
+  animation-name: bounceInDown;
+  animation-duration: 5s;
     
 }
 
 .vinnycontainer {
-	left: 823px
+	left: 802px
 }
 
 .vinny1 {
   width: 231px;
   height: 200px;
   background: url(../images/vinny-slides.png);
-  -webkit-animation-name: bounceInDown;
-  -webkit-animation-duration: 3s;
-  animation-name: bounceInDown;
-  animation-duration: 5s;
+  
 
 }
 

@@ -338,19 +338,21 @@ body {
   width: 2999px;
   height: 90px;
   background: url(../images/zig-zag.png);
+  background-color: #a01c74;
+  background-blend-mode: multiply;
 }
 
-/* line 245, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .ground {
   width: 100%;
   height: 20px;
-  background: #999219;
+  background: #191a1b;
   position: relative;
   bottom: 2%;
   z-index: 1111;
 }
 
-/* line 254, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 #vinny-container {
   width: 14%;
   height: 198px;
@@ -360,64 +362,72 @@ body {
   z-index: 1;
 }
 
-/* line 263, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .vinnycontainer {
   left: 800px;
 }
 
-/* line 267, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
+.tree {
+  position: absolute;
+  bottom: 96px;
+  left: 3200px;
+}
+
+/* line 275, ../sass/style.scss */
 #tree1 {
   width: 500px;
   height: 700px;
   background: url(../images/tree.png);
-  position: absolute;
-  bottom: 96px;
   z-index: 999;
 }
 
-/* line 278, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 #cloud1 {
   position: absolute;
-  left: 29%;
+  left: 2900px;
   top: 107px;
 }
 
-/* line 284, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 #cloud2 {
   position: absolute;
-  left: 55%;
+  left: 3200px;
   top: 150px;
 }
 
-/* line 290, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 #cloud3 {
   position: absolute;
-  left: 20%;
+  left: 3600px;
   top: 110px;
 }
 
-/* line 297, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .cloud {
   width: 124px;
   height: 83px;
   background: url(../images/clouds/cloud3.png);
+  z-index: -99999;
 }
 
-/* line 305, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .cloud2 {
   width: 77px;
   height: 47px;
   background: url(../images/clouds/cloud2.png);
+  z-index: -99999;
 }
 
-/* line 313, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .cloud3 {
   width: 77px;
   height: 47px;
   background: url(../images/clouds/cloud.png);
+  z-index: -99999;
 }
 
-/* line 322, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 #mushroom-man {
   overflow: hidden;
   position: absolute;
@@ -425,7 +435,7 @@ body {
   left: 1014px;
 }
 
-/* line 329, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .mushroom {
   width: 65px;
   height: 74px;
@@ -434,7 +444,7 @@ body {
   -webkit-animation: play-mushroom 7s steps(3) infinite;
 }
 
-/* line 338, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .london-skyline {
   width: 1919px;
   height: 500px;
@@ -443,27 +453,139 @@ body {
   filter: alpha(opacity=60);
 }
 
-/* line 346, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 #london-skyline-1 {
   position: absolute;
   bottom: 102px;
   left: 1px;
 }
 
-/* line 352, ../sass/style.scss */
-#layer-horizontal-1 {
-  width: 1880px;
-  height: 500px;
+/*.horizontal1 {
+	
+
+}*/
+/* line 362, ../sass/style.scss */
+.lampost {
+  position: absolute;
+  left: 200px;
+  bottom: 108px;
 }
 
-/* line 358, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
+.moon {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+/* line 375, ../sass/style.scss */
+.foggy-1 {
+  position: absolute;
+  left: 7px;
+  top: -36px;
+}
+
+/* line 382, ../sass/style.scss */
+.foggy-2 {
+  position: absolute;
+  left: 950px;
+  top: 400px;
+}
+
+/* line 388, ../sass/style.scss */
+.foggy-3 {
+  position: absolute;
+  left: 342px;
+  top: 313px;
+}
+
+/* line 396, ../sass/style.scss */
+#fog3 {
+  width: 900px;
+  height: 400px;
+  background: url(../images/fog3.png);
+}
+
+/* line 402, ../sass/style.scss */
+#fog2 {
+  width: 600px;
+  height: 300px;
+  background: url(../images/fog2.png);
+}
+
+/* line 408, ../sass/style.scss */
+#fog1 {
+  width: 400px;
+  height: 400px;
+  background: url(../images/fog.png);
+}
+
+/* line 414, ../sass/style.scss */
+#moon-1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 164px;
+  background: #e2e2e2;
+  background: -moz-radial-gradient(center, ellipse cover, #e2e2e2 0%, #f7f2f7 55%, #b8abb8 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #e2e2e2), color-stop(55%, #f7f2f7), color-stop(100%, #b8abb8));
+  background: -webkit-radial-gradient(center, ellipse cover, #e2e2e2 0%, #f7f2f7 55%, #b8abb8 100%);
+  background: -o-radial-gradient(center, ellipse cover, #e2e2e2 0%, #f7f2f7 55%, #b8abb8 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #e2e2e2 0%, #f7f2f7 55%, #b8abb8 100%);
+  background: radial-gradient(ellipse at center, #e2e2e2 0%, #f7f2f7 55%, #b8abb8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#b8abb8', GradientType=1 );
+  box-shadow: 3px 3px 3px #000;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+/* line 442, ../sass/style.scss */
+#london-lampost {
+  background: url(../images/lampost.png);
+  width: 340px;
+  height: 800px;
+}
+
+/* line 452, ../sass/style.scss */
+#layer-horizontal-1 {
+  background: #07031d;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #07031d, #000000, #196af8, bottom right #1a9aff);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #07031d, #000000, #196af8);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #07031d, #000000, #196af8);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #07031d, #000000, #196af8);
+  /* Standard syntax (must be last) */
+  width: 3000px;
+  height: 900px;
+}
+
+/* line 463, ../sass/style.scss */
 #layer-horizontal-2 {
   position: absolute;
   top: 30px;
   left: 0px;
 }
 
-/* line 364, ../sass/style.scss */
+/* line 469, ../sass/style.scss */
 #my-skills-container {
   position: absolute;
   left: 0px;
@@ -472,26 +594,26 @@ body {
   height: 80%;
 }
 
-/* line 373, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 #layer-horizontal-4 {
   width: 500px;
   display: inline-block;
   float: left;
 }
 
-/* line 379, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 .horizontal {
   width: 5200px;
   height: 900px;
 }
 
-/* line 384, ../sass/style.scss */
+/* line 489, ../sass/style.scss */
 .myskills {
   position: absolute;
   left: 2105px;
 }
 
-/* line 389, ../sass/style.scss */
+/* line 494, ../sass/style.scss */
 #vinny {
   width: 231px;
   height: 396px;
@@ -500,40 +622,40 @@ body {
   -webkit-animation: play 1s steps(2) infinite 1s;
 }
 
-/* line 397, ../sass/style.scss */
+/* line 502, ../sass/style.scss */
 .on {
   animation: play 1s steps(2) infinite 1s;
   -webkit-animation: play 1s steps(2) infinite 1s;
 }
 
-/* line 402, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 .off {
   animation-name: none;
   -webkit-animation-name: none;
 }
 
 /* myskills */
-/* line 410, ../sass/style.scss */
+/* line 515, ../sass/style.scss */
 .barchart {
   position: absolute;
   left: 2200px;
 }
 
-/* line 415, ../sass/style.scss */
+/* line 520, ../sass/style.scss */
 .postman {
   position: absolute;
-  left: 1900px;
+  left: 1692px;
   bottom: 34px;
 }
 
-/* line 422, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 .section-text {
   position: relative;
   top: 208px;
   left: 4px;
 }
 
-/* line 428, ../sass/style.scss */
+/* line 533, ../sass/style.scss */
 #section-1 {
   font-size: 22px;
   color: #000;
@@ -541,7 +663,7 @@ body {
   text-align: center;
 }
 
-/* line 437, ../sass/style.scss */
+/* line 542, ../sass/style.scss */
 #postman1 {
   width: 400px;
   height: 500px;
@@ -549,14 +671,14 @@ body {
   background-size: 400px 500px;
 }
 
-/* line 446, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 #bar-chart-1 {
   width: 600px;
   height: 400px;
   padding: 20px;
 }
 
-/* line 452, ../sass/style.scss */
+/* line 557, ../sass/style.scss */
 #axis-left {
   width: 5px;
   height: 400px;
@@ -564,7 +686,7 @@ body {
   background: #fff;
 }
 
-/* line 460, ../sass/style.scss */
+/* line 565, ../sass/style.scss */
 #axis-main {
   width: 700px;
   height: 5px;
@@ -572,13 +694,13 @@ body {
   background: #fff;
 }
 
-/* line 468, ../sass/style.scss */
+/* line 573, ../sass/style.scss */
 #y-axis-text {
   width: 150px;
   height: 400px;
 }
 
-/* line 473, ../sass/style.scss */
+/* line 578, ../sass/style.scss */
 #bar-1 {
   width: 50px;
   height: 200px;
@@ -592,27 +714,27 @@ body {
   -webkit-animation-duration: 5s;
 }
 
-/* line 486, ../sass/style.scss */
+/* line 591, ../sass/style.scss */
 .bar {
   position: absolute;
   bottom: 5px;
   left: 12px;
 }
 
-/* line 492, ../sass/style.scss */
+/* line 597, ../sass/style.scss */
 .axistext1 {
   position: absolute;
   left: 2054px;
   top: 71px;
 }
 
-/* line 498, ../sass/style.scss */
+/* line 603, ../sass/style.scss */
 .axis {
   position: relative;
   left: 20px;
 }
 
-/* line 503, ../sass/style.scss */
+/* line 608, ../sass/style.scss */
 #column-1, #column-2, #column-3, #column-4 {
   font-size: 22px;
   color: white;
@@ -621,7 +743,7 @@ body {
 }
 
 /*  Travel section   */
-/* line 514, ../sass/style.scss */
+/* line 619, ../sass/style.scss */
 #layer-horizontal-3 {
   width: 1500px;
   height: 600px;
@@ -630,62 +752,77 @@ body {
   bottom: 90px;
 }
 
-/* line 522, ../sass/style.scss */
+/* line 627, ../sass/style.scss */
 #ground-3 {
   width: 2000px;
   height: 20px;
   background: #BCB907;
 }
 
-/* line 528, ../sass/style.scss */
+/* line 633, ../sass/style.scss */
 .ground3 {
   position: absolute;
   bottom: 0%;
   left: -17px;
 }
 
-/* line 535, ../sass/style.scss */
+/* line 640, ../sass/style.scss */
 #ground-2 {
   width: 2000px;
   height: 90px;
   background: #906610;
 }
 
-/* line 540, ../sass/style.scss */
+/* line 645, ../sass/style.scss */
 .ground2 {
   position: absolute;
   top: 100%;
   left: -17px;
 }
 
-/* line 546, ../sass/style.scss */
+/* line 651, ../sass/style.scss */
 .dune {
   position: absolute;
   bottom: 3%;
 }
 
-/* line 551, ../sass/style.scss */
+/* line 656, ../sass/style.scss */
 .dune3 {
   position: absolute;
   bottom: -7%;
   left: 3372px;
 }
 
-/* line 558, ../sass/style.scss */
+/* line 663, ../sass/style.scss */
 .sun {
   position: absolute;
   top: 20px;
   left: 3200px;
 }
 
-/* line 564, ../sass/style.scss */
+/* line 669, ../sass/style.scss */
 .cactus {
   position: absolute;
   left: 1341px;
   bottom: -4px;
 }
 
-/* line 571, ../sass/style.scss */
+/* line 675, ../sass/style.scss */
+.burj {
+  position: absolute;
+  bottom: 19%;
+  left: 3756px;
+}
+
+/* line 682, ../sass/style.scss */
+#burj-khalifa {
+  width: 340px;
+  height: 800px;
+  background: url(../images/burj-khalifa.png);
+  z-index: -99999;
+}
+
+/* line 689, ../sass/style.scss */
 #cactus-1 {
   width: 140px;
   height: 296px;
@@ -695,7 +832,7 @@ body {
   -webkit-animation-play-state: running;
 }
 
-/* line 580, ../sass/style.scss */
+/* line 698, ../sass/style.scss */
 .pause {
   animation-play-state: paused;
   -webkit-animation-play-state: paused;
@@ -717,7 +854,7 @@ body {
     transform: traslateX(200px);
   }
 }
-/* line 599, ../sass/style.scss */
+/* line 717, ../sass/style.scss */
 #sun-1 {
   width: 163px;
   height: 169px;
@@ -725,7 +862,7 @@ body {
   z-index: -9999;
 }
 
-/* line 606, ../sass/style.scss */
+/* line 724, ../sass/style.scss */
 #dunes-1 {
   width: 800px;
   height: 600px;
@@ -733,7 +870,7 @@ body {
   z-index: -9999;
 }
 
-/* line 613, ../sass/style.scss */
+/* line 731, ../sass/style.scss */
 #dunes-2 {
   width: 800px;
   height: 600px;
@@ -742,7 +879,7 @@ body {
   left: 800px;
 }
 
-/* line 621, ../sass/style.scss */
+/* line 739, ../sass/style.scss */
 #dunes-3 {
   width: 800px;
   height: 600px;

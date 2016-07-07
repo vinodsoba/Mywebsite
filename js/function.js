@@ -30,7 +30,8 @@ window.onload = function(){
 	cactus();
 	storeDivs();
 	setLayerHorizontal();
-	isVinnyStatic();
+	
+	animateMoon();
 
 }
 
@@ -101,20 +102,28 @@ function animateBars()
 
 }
 
-function isVinnyStatic(){
+function isVinnyStatic(e){
 
-	var x = document.getElementById("vinny-container");
-	var xArray = new Array();
-	if ( x ){
-		for(var i=0; i>xArray; i++){
-			
-			console.log(i);
-			}
-		} else {
-			console.log("false");
-		}
+	var layerHorizontal1 = document.getElementById('layer-horizontal-1');
+	var x = document.getElementById('vinny-container');
+	
+	layerHorizontal1 = document.width;
+	
+	vinnyLeft = e.offsetLeft;
 
+	console.log(vinnyLeft);
+	if (vinnyLeft){
+	
+		console.log(layerHorizontal1.document.width());
+		console.log("yay");
+	}
+	else{
+		console.log(x);
+		console.log("nay");
+	}
 }
+
+document.onscroll = isVinnyStatic;
 
 function onScrollEventHandler(ev)
  {
@@ -134,6 +143,19 @@ if(el.addEventListener)
      el.addEventListener('scroll', onScrollEventHandler, false);   
 else if (el.attachEvent)
      el.attachEvent('onscroll', onScrollEventHandler); 
+
+
+function animateMoon(){
+
+	var moon = document.getElementById("moon-1");
+
+	if(moon){
+		console.log(moon);
+		$(moon).addClass("moon");
+		
+		
+	}
+}
 
 
 
@@ -175,6 +197,8 @@ function scroll(){
 
 	
 }
+
+
 /*
 
 
