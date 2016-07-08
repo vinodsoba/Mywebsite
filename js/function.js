@@ -25,16 +25,17 @@ var layerHorizontal = document.getElementsByTagName("div");
 layerHorizontal = new Array();
 horizontalContainerArray = new Array();
 
+
+
+
 //animate the sprite
 window.onload = function(){	
 	cactus();
 	storeDivs();
 	setLayerHorizontal();
-	
 	animateMoon();
-
+	layerHorizontal1Animtion();
 }
-
 
 
 function storeDivs()
@@ -42,7 +43,6 @@ function storeDivs()
 	var treeContainerArray = document.getElementById("tree1");
 	treeContainerArray = new Array();
 	var layerHorizontal = document.getElementsByTagName("div");
-
 
     for (var i=0; i<layerHorizontal.length; i++)
 	{
@@ -66,14 +66,10 @@ function setLayerHorizontal(){
 		horizontalContainerArray[2].style.width = "600px";
 
 		console.log(horizontalContainerArray[2]);
-	}
-	else {
+	}else{
 		console.log("false");
 	}
-
-
 }
-
 
 
 function cactus(){
@@ -81,15 +77,10 @@ function cactus(){
 	var cactusContainer = document.getElementById("cactus-1");		
 	if(w >= 2000){
 
-			cactusContainer.style.animation ="cactus 2s ease-in";
-			
-		}
-		$(this).addClass('pause');
-
-			
+		cactusContainer.style.animation ="cactus 2s ease-in";			
+	}
+		$(this).addClass('pause');			
 }
-console.log(w);
-
 
 
 function animateBars()
@@ -98,68 +89,60 @@ function animateBars()
 	{
 		$(barArray[i]).stop().delay(i * 300).animate({top: [plantTargetTopObjectArray[i].offsetTop, 'easeOutElastic']}, 800, function() {});
 	}
-
-
 }
 
-function isVinnyStatic(e){
+function layerHorizontal1Animtion(e){
 
-	var layerHorizontal1 = document.getElementById('layer-horizontal-1');
-	var x = document.getElementById('vinny-container');
+	var treeContainer1 = document.getElementById('tree1');
+	var vinnyContainer = document.getElementById('vinny-container');
+	var sunContainer = document.getElementById('sun-1');
 	
-	layerHorizontal1 = document.width;
-	
-	vinnyLeft = e.offsetLeft;
 
-	console.log(vinnyLeft);
-	if (vinnyLeft){
-	
-		console.log(layerHorizontal1.document.width());
-		console.log("yay");
-	}
-	else{
-		console.log(x);
+	if(vinnyContainer){
+		$(window).scroll(function() {
+   			var hT = $(treeContainer1).offset().left,
+       				hH = $('tree').outerHeight(),
+       				wH = $(window).height(),
+       				vinnyContainerLeft = $(this).scrollLeft();
+    				console.log(hT, vinnyContainerLeft);
+	   		if (vinnyContainerLeft >= 2010){
+	   			
+	   			sunContainer.style.display="block";
+	   			treeContainer1.style.display = "block";
+	   			console.log("yay");
+	   		}
+   		});
+	}else{
+		
 		console.log("nay");
 	}
 }
 
-document.onscroll = isVinnyStatic;
+document.onscroll = layerHorizontal1Animtion;
 
 function onScrollEventHandler(ev)
  {
     if (w >= 125){
-   		scroll(); 
-   		  	
-    }
-    else{  console.log(innerHTML = "Width: " + w + "<br>Height: " + h); }
-   
-    //http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#event-type-scroll
+   		scroll();   		  	
+    }else{  console.log(innerHTML = "Width: " + w + "<br>Height: " + h); }
+      //http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html#event-type-scroll
 } 
-
 
 var el=window;
 
 if(el.addEventListener)
-     el.addEventListener('scroll', onScrollEventHandler, false);   
+  el.addEventListener('scroll', onScrollEventHandler, false);   
 else if (el.attachEvent)
-     el.attachEvent('onscroll', onScrollEventHandler); 
+ el.attachEvent('onscroll', onScrollEventHandler); 
 
 
 function animateMoon(){
-
 	var moon = document.getElementById("moon-1");
-
 	if(moon){
 		console.log(moon);
-		$(moon).addClass("moon");
-		
-		
+		$(moon).addClass("moon");		
 	}
 }
-
-
-
-
 
 function scroll(){
 	var vinnyContainer = document.getElementById("vinny-container");
@@ -185,130 +168,8 @@ function scroll(){
 				vinnyContainerTimer -= 1;
 				$(vinnyContainer).stop().animate({"marginLeft": ($(window).scrollLeft() + 10) + "px"}, "ease-in");
 				console.log("down");
-
-				
-
 		}
-		
-
-
-		
 	});
-
-	
 }
 
-
-/*
-
-
-$(document).ready(function(){
-	$("button#first").click(function(e){
-		
-		var val1 = $('#first').val();
-		$.ajax({
-			type: 'POST',
-			url: 'inc/connect.php',
-			data: { first: val1 },
-			success: function(data){
-			$('#display').html(data);
-			}
-		});
-		event.preventDefault();
-	});
-
-});
-
-
-$(document).ready(function(){
-	$("button#second").click(function(e){
-		var val2 = $('#second').val();
-		$.ajax({
-			type: 'POST',
-			url: 'inc/display_image.php',
-			data: { second: val2 },
-			success: function(data){
-				
-				$('#display').html(data);
-			}
-		});
-		event.preventDefault();
-	});
-
-});
-
-$(document).ready(function(){
-	$("button#third").click(function(e){	
-		var val3 = $('#third').val();
-		$.ajax({
-			type: 'POST',
-			url: 'inc/get_ferrari.php',
-			data: { third: val3},
-			success: function(data){
-			$('#img2').html(data);
-			}
-		});
-		event.preventDefault();
-	});
-
-});
-
-
-$(document).ready(function(){
-	$("button#fourth").click(function(e){
-		var val4 = $('#fourth').val();
-		$.ajax({
-			type: 'POST',
-			url: 'inc/get_ferrari_img.php',
-			data: { fourth: val4 },
-			success: function(data){			
-				$('#img2').html(data);
-			}
-		});
-		event.preventDefault();
-	});
-
-});
-
-
-
-function my_function(){
-var myimage = document.getElementById("myimage");
-if (myimage.addEventListener) {
-	// IE9, Chrome, Safari, Opera
-	myimage.addEventListener("mousewheel", MouseWheelHandler, false);
-	// Firefox
-	myimage.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-}
-// IE 6/7/8
-else myimage.attachEvent("onmousewheel", MouseWheelHandler);
-}
-
-function MouseWheelHandler(e) {
-
-	if(myimage){
-		
-		
-		myimage.addEventListener("onmousewheel", MouseWheelHandler, false);
-		document.getElementById("myimage").style.position = "relative";
-		document.body.scrollleft = "100px";
-		console.log(myimage);
-	}
-	// cross-browser wheel delta
-	var e = window.event || e; // old IE support
-	var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-	myimage.style.width = Math.max(50, Math.min(800, myimage.width + (30 * delta))) + "px";
-
-	return false;
-}
-
-function doSomething() {
-	function placeDiv(x_pos, y_pos) {
-  var d = document.getElementById('myimage');
-  d.style.position = "absolute";
-  d.style.left = x_pos+'px';
-  d.style.top = y_pos+'px';
-}
-}
-*/
 

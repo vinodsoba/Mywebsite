@@ -380,30 +380,33 @@ body {
   height: 700px;
   background: url(../images/tree.png);
   z-index: 999;
+  display: none;
+  animation: slideInLeft 2s linear;
+  -webkit-animation: slideInLeft 2s linear;
 }
 
-/* line 284, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 #cloud1 {
   position: absolute;
   left: 2900px;
   top: 107px;
 }
 
-/* line 290, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 #cloud2 {
   position: absolute;
   left: 3200px;
   top: 150px;
 }
 
-/* line 296, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 #cloud3 {
   position: absolute;
   left: 3600px;
   top: 110px;
 }
 
-/* line 303, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 .cloud {
   width: 124px;
   height: 83px;
@@ -411,7 +414,7 @@ body {
   z-index: -99999;
 }
 
-/* line 312, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .cloud2 {
   width: 77px;
   height: 47px;
@@ -419,7 +422,7 @@ body {
   z-index: -99999;
 }
 
-/* line 319, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 .cloud3 {
   width: 77px;
   height: 47px;
@@ -427,7 +430,7 @@ body {
   z-index: -99999;
 }
 
-/* line 327, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 #mushroom-man {
   overflow: hidden;
   position: absolute;
@@ -435,7 +438,7 @@ body {
   left: 1014px;
 }
 
-/* line 334, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 .mushroom {
   width: 65px;
   height: 74px;
@@ -444,7 +447,7 @@ body {
   -webkit-animation: play-mushroom 7s steps(3) infinite;
 }
 
-/* line 343, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 .london-skyline {
   width: 1919px;
   height: 500px;
@@ -453,7 +456,7 @@ body {
   filter: alpha(opacity=60);
 }
 
-/* line 351, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 #london-skyline-1 {
   position: absolute;
   bottom: 102px;
@@ -464,63 +467,63 @@ body {
 	
 
 }*/
-/* line 362, ../sass/style.scss */
+/* line 364, ../sass/style.scss */
 .lampost {
   position: absolute;
   left: 200px;
   bottom: 108px;
 }
 
-/* line 368, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .moon {
   position: absolute;
   top: 20px;
   left: 10px;
 }
 
-/* line 375, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .foggy-1 {
   position: absolute;
   left: 7px;
   top: -36px;
 }
 
-/* line 382, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .foggy-2 {
   position: absolute;
   left: 950px;
   top: 400px;
 }
 
-/* line 388, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .foggy-3 {
   position: absolute;
   left: 342px;
   top: 313px;
 }
 
-/* line 396, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 #fog3 {
   width: 900px;
   height: 400px;
   background: url(../images/fog3.png);
 }
 
-/* line 402, ../sass/style.scss */
+/* line 404, ../sass/style.scss */
 #fog2 {
   width: 600px;
   height: 300px;
   background: url(../images/fog2.png);
 }
 
-/* line 408, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 #fog1 {
   width: 400px;
   height: 400px;
   background: url(../images/fog.png);
 }
 
-/* line 414, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 #moon-1 {
   width: 100px;
   height: 100px;
@@ -539,6 +542,22 @@ body {
   -webkit-animation: fadeIn 2s;
 }
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(-300px);
+  }
+}
+@-webkit-keyframes slideInLeft {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
 @keyframes fadeIn {
   from {
     transform: scale(0);
@@ -555,14 +574,14 @@ body {
     transform: scale(100%);
   }
 }
-/* line 442, ../sass/style.scss */
+/* line 457, ../sass/style.scss */
 #london-lampost {
   background: url(../images/lampost.png);
   width: 340px;
   height: 800px;
 }
 
-/* line 452, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 #layer-horizontal-1 {
   background: #07031d;
   /* For browsers that do not support gradients */
@@ -578,14 +597,14 @@ body {
   height: 900px;
 }
 
-/* line 463, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 #layer-horizontal-2 {
   position: absolute;
   top: 30px;
   left: 0px;
 }
 
-/* line 469, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 #my-skills-container {
   position: absolute;
   left: 0px;
@@ -594,26 +613,26 @@ body {
   height: 80%;
 }
 
-/* line 478, ../sass/style.scss */
+/* line 493, ../sass/style.scss */
 #layer-horizontal-4 {
   width: 500px;
   display: inline-block;
   float: left;
 }
 
-/* line 484, ../sass/style.scss */
+/* line 499, ../sass/style.scss */
 .horizontal {
   width: 5200px;
   height: 900px;
 }
 
-/* line 489, ../sass/style.scss */
+/* line 504, ../sass/style.scss */
 .myskills {
   position: absolute;
   left: 2105px;
 }
 
-/* line 494, ../sass/style.scss */
+/* line 509, ../sass/style.scss */
 #vinny {
   width: 231px;
   height: 396px;
@@ -622,40 +641,40 @@ body {
   -webkit-animation: play 1s steps(2) infinite 1s;
 }
 
-/* line 502, ../sass/style.scss */
+/* line 517, ../sass/style.scss */
 .on {
   animation: play 1s steps(2) infinite 1s;
   -webkit-animation: play 1s steps(2) infinite 1s;
 }
 
-/* line 507, ../sass/style.scss */
+/* line 522, ../sass/style.scss */
 .off {
   animation-name: none;
   -webkit-animation-name: none;
 }
 
 /* myskills */
-/* line 515, ../sass/style.scss */
+/* line 530, ../sass/style.scss */
 .barchart {
   position: absolute;
   left: 2200px;
 }
 
-/* line 520, ../sass/style.scss */
+/* line 535, ../sass/style.scss */
 .postman {
   position: absolute;
   left: 1692px;
   bottom: 34px;
 }
 
-/* line 527, ../sass/style.scss */
+/* line 542, ../sass/style.scss */
 .section-text {
   position: relative;
   top: 208px;
   left: 4px;
 }
 
-/* line 533, ../sass/style.scss */
+/* line 548, ../sass/style.scss */
 #section-1 {
   font-size: 22px;
   color: #000;
@@ -663,7 +682,7 @@ body {
   text-align: center;
 }
 
-/* line 542, ../sass/style.scss */
+/* line 557, ../sass/style.scss */
 #postman1 {
   width: 400px;
   height: 500px;
@@ -671,14 +690,14 @@ body {
   background-size: 400px 500px;
 }
 
-/* line 551, ../sass/style.scss */
+/* line 566, ../sass/style.scss */
 #bar-chart-1 {
   width: 600px;
   height: 400px;
   padding: 20px;
 }
 
-/* line 557, ../sass/style.scss */
+/* line 572, ../sass/style.scss */
 #axis-left {
   width: 5px;
   height: 400px;
@@ -686,7 +705,7 @@ body {
   background: #fff;
 }
 
-/* line 565, ../sass/style.scss */
+/* line 580, ../sass/style.scss */
 #axis-main {
   width: 700px;
   height: 5px;
@@ -694,13 +713,13 @@ body {
   background: #fff;
 }
 
-/* line 573, ../sass/style.scss */
+/* line 588, ../sass/style.scss */
 #y-axis-text {
   width: 150px;
   height: 400px;
 }
 
-/* line 578, ../sass/style.scss */
+/* line 593, ../sass/style.scss */
 #bar-1 {
   width: 50px;
   height: 200px;
@@ -714,27 +733,27 @@ body {
   -webkit-animation-duration: 5s;
 }
 
-/* line 591, ../sass/style.scss */
+/* line 606, ../sass/style.scss */
 .bar {
   position: absolute;
   bottom: 5px;
   left: 12px;
 }
 
-/* line 597, ../sass/style.scss */
+/* line 612, ../sass/style.scss */
 .axistext1 {
   position: absolute;
   left: 2054px;
   top: 71px;
 }
 
-/* line 603, ../sass/style.scss */
+/* line 618, ../sass/style.scss */
 .axis {
   position: relative;
   left: 20px;
 }
 
-/* line 608, ../sass/style.scss */
+/* line 623, ../sass/style.scss */
 #column-1, #column-2, #column-3, #column-4 {
   font-size: 22px;
   color: white;
@@ -743,7 +762,7 @@ body {
 }
 
 /*  Travel section   */
-/* line 619, ../sass/style.scss */
+/* line 634, ../sass/style.scss */
 #layer-horizontal-3 {
   width: 1500px;
   height: 600px;
@@ -752,69 +771,69 @@ body {
   bottom: 90px;
 }
 
-/* line 627, ../sass/style.scss */
+/* line 642, ../sass/style.scss */
 #ground-3 {
   width: 2000px;
   height: 20px;
   background: #BCB907;
 }
 
-/* line 633, ../sass/style.scss */
+/* line 648, ../sass/style.scss */
 .ground3 {
   position: absolute;
   bottom: 0%;
   left: -17px;
 }
 
-/* line 640, ../sass/style.scss */
+/* line 655, ../sass/style.scss */
 #ground-2 {
   width: 2000px;
   height: 90px;
   background: #906610;
 }
 
-/* line 645, ../sass/style.scss */
+/* line 660, ../sass/style.scss */
 .ground2 {
   position: absolute;
   top: 100%;
   left: -17px;
 }
 
-/* line 651, ../sass/style.scss */
+/* line 666, ../sass/style.scss */
 .dune {
   position: absolute;
   bottom: 3%;
 }
 
-/* line 656, ../sass/style.scss */
+/* line 671, ../sass/style.scss */
 .dune3 {
   position: absolute;
   bottom: -7%;
   left: 3372px;
 }
 
-/* line 663, ../sass/style.scss */
+/* line 678, ../sass/style.scss */
 .sun {
   position: absolute;
   top: 20px;
   left: 3200px;
 }
 
-/* line 669, ../sass/style.scss */
+/* line 684, ../sass/style.scss */
 .cactus {
   position: absolute;
   left: 1341px;
   bottom: -4px;
 }
 
-/* line 675, ../sass/style.scss */
+/* line 690, ../sass/style.scss */
 .burj {
   position: absolute;
   bottom: 19%;
   left: 3756px;
 }
 
-/* line 682, ../sass/style.scss */
+/* line 697, ../sass/style.scss */
 #burj-khalifa {
   width: 340px;
   height: 800px;
@@ -822,7 +841,7 @@ body {
   z-index: -99999;
 }
 
-/* line 689, ../sass/style.scss */
+/* line 704, ../sass/style.scss */
 #cactus-1 {
   width: 140px;
   height: 296px;
@@ -832,7 +851,7 @@ body {
   -webkit-animation-play-state: running;
 }
 
-/* line 698, ../sass/style.scss */
+/* line 713, ../sass/style.scss */
 .pause {
   animation-play-state: paused;
   -webkit-animation-play-state: paused;
@@ -854,15 +873,18 @@ body {
     transform: traslateX(200px);
   }
 }
-/* line 717, ../sass/style.scss */
+/* line 732, ../sass/style.scss */
 #sun-1 {
   width: 163px;
   height: 169px;
   background: url(../images/sun.png);
   z-index: -9999;
+  display: none;
+  animation: slideInUp 3s linear;
+  -webkit-animation: slideInUp 3s linear;
 }
 
-/* line 724, ../sass/style.scss */
+/* line 742, ../sass/style.scss */
 #dunes-1 {
   width: 800px;
   height: 600px;
@@ -870,7 +892,7 @@ body {
   z-index: -9999;
 }
 
-/* line 731, ../sass/style.scss */
+/* line 749, ../sass/style.scss */
 #dunes-2 {
   width: 800px;
   height: 600px;
@@ -879,7 +901,7 @@ body {
   left: 800px;
 }
 
-/* line 739, ../sass/style.scss */
+/* line 757, ../sass/style.scss */
 #dunes-3 {
   width: 800px;
   height: 600px;
